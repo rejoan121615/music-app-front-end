@@ -6,7 +6,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-
 @layer components {
     /* texts  */
     .title-1 {
@@ -49,7 +48,75 @@
     .right__content {
         @apply bg-dark-blue;
     }
-    
+    /* hamberger menu  */
 
-    /* song component  */
+    .hambur-container .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .hambur-container .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hambur-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .hambur-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .hambur-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .hambur-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .hambur-container input[type="checkbox"]:checked ~ .menu-items {
+        transform: translateX(0);
+    }
+
+    .hambur-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+    }
+
+    .hambur-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+
+    .hambur-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+    }
+    #left-navigation {
+        transition: left 0.5s ease-in-out;
+    }
+
+    /* song hover effect  */
+    /* .song-hover {
+        @apply cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk hover:rounded-[8px] transition-all duration-500;
+    } */
 }

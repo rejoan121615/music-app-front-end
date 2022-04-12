@@ -20,7 +20,8 @@
         <div class="lg:grid lg:grid-cols-[220px_1fr] lg:pl-[50px] xl:pl-[65px]">
             <!----------------- left side navigation menu  ----------------->
             <aside
-                class="hidden border-r-1 pt-[40px] xl:pt-[50px] border-border lg:block lg:w-[220px] px-0"
+                id="left-navigation"
+                class="fixed bg-dark-blue w-full top-[148px] left-[-100%] pl-6 h-full border-r-1 pt-[40px] border-border lg:relative lg:top-0 lg:bg-transparent lg:left-0 xl:pt-[50px] lg:block lg:w-[220px] px-0"
             >
                 <!-- back button  -->
                 <button class="flex justify-start items-center">
@@ -342,21 +343,43 @@
                 </nav>
             </aside>
             <!------------------ right side contents  ------------------->
-            <section class="right__content pb-24">
+            <section class="right__content pb-24 lg:pb-[20px] xl:pb-2">
                 <!----------------- top header ------------ -->
                 <header
-                    class="bg-dark-blue border-b-1 border-border box flex flex-col gap-y-6 md:flex-row md:justify-between lg:items-center"
+                    class="fixed left-0 top-0 w-full bg-dark-blue border-b-1 border-border box flex flex-wrap gap-y-6 items-center justify-between md:flex-row md:justify-between lg:items-center lg:justify-between lg:relative lg:left-0 lg:top-0"
                 >
+                    <!-- hamberger menu  -->
+                    <div
+                        class="hambur-container w-8 h-8 relative order-2 lg:hidden"
+                    >
+                        <input
+                            class="checkbox"
+                            type="checkbox"
+                            name=""
+                            id="menu-btn"
+                        />
+                        <div class="hamburger-lines">
+                            <span class="line line1 bg-milk"></span>
+                            <span class="line line2 bg-milk"></span>
+                            <span class="line line3 bg-milk"></span>
+                        </div>
+                    </div>
                     <!-- title  -->
-                    <h1 class="title-1">howdy john!</h1>
+                    <h1
+                        class="title-1 order-1 w-full text-center lg:w-[initial]"
+                    >
+                        howdy john!
+                    </h1>
                     <!-- search bar  -->
-                    <div class="w-full max-w-[300px] flex items-center">
+                    <div
+                        class="w-9/12 max-w-[350px] h-[45px] flex items-center order-3 relative"
+                    >
                         <input
                             type="text"
-                            class="w-full p-3 rounded-full text-[14px] leading-[19px] font-[500] text-white placeholder:text-[rgba(255, 255, 255, 0.5)] bg-transparent outline-none border-1 border-transparent focus:border-1 focus:border-milk lg:w-[350px]"
+                            class="w-full p-3 rounded-full text-[14px] leading-[19px] font-[500] text-white placeholder:text-[rgba(255, 255, 255, 0.5)] bg-transparent outline-none border-1 border-border focus:border-1 focus:border-milk absolute right-0 px-5"
                             placeholder="Search a song, an album or an artist"
                         />
-                        <button class="w-[20px] h-[20px]">
+                        <button class="w-[20px] h-[20px] absolute right-4">
                             <img
                                 class="w-full"
                                 src="./img/icons/search-normal.png"
@@ -366,7 +389,7 @@
                     </div>
                 </header>
                 <!------------ song box recently played and most played-----------  -->
-                <section>
+                <section class="mt-[150px] sm:mt-[157px] lg:mt-0">
                     <div
                         class="box pb-0 pt-[37px] flex flex-col gap-y-[37px] sm:grid sm:grid-cols-2 sm:gap-x-5 sm:justify-between md:gap-x-20 xl:gap-x-24 xxl:gap-x-[102px]"
                     >
@@ -376,7 +399,9 @@
                             <!-- song list  -->
                             <div class="mt-6 flex flex-col gap-y-4">
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="song-hover flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you.png"
@@ -410,7 +435,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/who-are-you.png"
@@ -441,7 +468,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/where-are-we-going.png"
@@ -477,7 +506,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you-2.png"
@@ -508,7 +539,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you-3.png"
@@ -542,7 +575,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you-4.png"
@@ -586,7 +621,9 @@
                             <!-- song list  -->
                             <div class="mt-6 flex flex-col gap-y-4">
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you.png"
@@ -620,7 +657,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/who-are-you.png"
@@ -654,7 +693,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/where-are-we-going.png"
@@ -690,7 +731,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you-2.png"
@@ -724,7 +767,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you-3.png"
@@ -755,7 +800,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you-4.png"
@@ -804,7 +851,9 @@
                         >
                             <aside class="flex flex-col gap-y-4">
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/recently-added/Rectangle 4300.png"
@@ -843,7 +892,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/recently-added/Rectangle 4300-1.png"
@@ -877,7 +928,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/recently-added/Rectangle 4300-2.png"
@@ -914,7 +967,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/recently-added/Rectangle 4300-3.png"
@@ -952,7 +1007,9 @@
                                 class="sm:mt-[6px] mt-6 flex flex-col gap-y-4 justify-center"
                             >
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you.png"
@@ -986,7 +1043,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/who-are-you.png"
@@ -1020,7 +1079,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/where-are-we-going.png"
@@ -1056,7 +1117,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you-2.png"
@@ -1090,7 +1153,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you-3.png"
@@ -1121,7 +1186,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/song-poster/i-miss-you-4.png"
@@ -1230,7 +1297,9 @@
                             <!-- album  -->
                             <aside class="flex flex-col gap-y-4">
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/recently-added/Rectangle 4300.png"
@@ -1269,7 +1338,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/recently-added/Rectangle 4300-1.png"
@@ -1303,7 +1374,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/recently-added/Rectangle 4300-2.png"
@@ -1343,7 +1416,9 @@
                             <!-- album  -->
                             <aside class="flex flex-col gap-y-4">
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/recently-added/Rectangle 4300.png"
@@ -1382,7 +1457,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/recently-added/Rectangle 4300-1.png"
@@ -1416,7 +1493,9 @@
                                     </button>
                                 </div>
                                 <!-- songs  -->
-                                <div class="flex justify-between items-center">
+                                <div
+                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                >
                                     <div class="flex items-center gap-x-4">
                                         <img
                                             src="./img/recently-added/Rectangle 4300-2.png"
@@ -1569,5 +1648,7 @@
                 </div>
             </div>
         </div>
+        <!-- js file  -->
+        <script src="./js/script.js"></script>
     </body>
 </html>
