@@ -32,7 +32,7 @@
     }
 
     .artist-name {
-        @apply text-[14px] capitalize;
+        @apply text-[14px] capitalize text-[#dadada];
     }
 
     .view-all-btn {
