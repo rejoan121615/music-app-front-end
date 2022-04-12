@@ -497,6 +497,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 3rem;
 }
 
+.poster-lg {
+  height: 6rem;
+  width: 6rem;
+}
+
 .song-name {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -507,13 +512,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(218 218 218 / var(--tw-text-opacity));
 }
 
-.album-name {
+.album-name, .artist-name {
+  margin-top: 6px;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.01em;
   --tw-text-opacity: 1;
   color: rgb(179 179 179 / var(--tw-text-opacity));
+}
+
+.artist-name {
+  font-size: 14px;
+  text-transform: capitalize;
 }
 
 .view-all-btn {
@@ -557,8 +568,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.5rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
+.mt-\[6px\] {
+  margin-top: 6px;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .flex {
@@ -579,6 +594,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -611,10 +630,55 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(5 17 32 / var(--tw-bg-opacity));
 }
 
+.pb-0 {
+  padding-bottom: 0px;
+}
+
 .pt-\[37px\] {
   padding-top: 37px;
 }
 
+.pt-\[48px\] {
+  padding-top: 48px;
+}
+
 :root {
   font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 640px) {
+  .sm\:mt-\[6px\] {
+    margin-top: 6px;
+  }
+
+  .sm\:grid {
+    display: grid;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:gap-x-24 {
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
 }

@@ -19,12 +19,20 @@
     .poster {
         @apply w-12 h-12;
     }
+    .poster-lg {
+        @apply w-24 h-24;
+    }
     .song-name {
         @apply font-semibold text-base text-milk leading-[20px] tracking-[0.01em];
     }
 
-    .album-name {
-        @apply font-normal text-[13px] leading-[16px] tracking-[0.01em] text-[#B3B3B3];
+    .album-name,
+    .artist-name {
+        @apply font-normal text-[13px] mt-[6px] leading-[16px] tracking-[0.01em] text-[#B3B3B3];
+    }
+
+    .artist-name {
+        @apply text-[14px] capitalize;
     }
 
     .view-all-btn {
