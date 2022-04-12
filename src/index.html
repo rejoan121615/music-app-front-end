@@ -358,7 +358,7 @@
                         />
                         <button class="w-[20px] h-[20px]">
                             <img
-                                class=" w-full"
+                                class="w-full"
                                 src="./img/icons/search-normal.png"
                                 alt="search icon"
                             />
@@ -1173,16 +1173,113 @@
                     </div>
                 </section>
             </section>
-            <!------------------ music player  --------------------->
-            <div class="w-screen">
-                <div class="w-full md:container">
-                    <!-- music details   -->
-
-                    <!-- player control  -->
-
-                    <!-- music control  -->
-
-                    <!-- control  -->
+        </div>
+        <!------------------ music player  --------------------->
+        <div
+            class="w-full fixed bottom-0 left-0 bg-dark-blue-600 py-[20px] lg:py-[16px]"
+        >
+            <div
+                class="container px-3 mx-auto grid grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-x-8 md:gap-x-14 lg:grid-cols-4 lg:gap-0"
+            >
+                <!-- music details   -->
+                <div class="flex items-center gap-x-4 lg:w-[250px] xl:w-[320px]">
+                    <img
+                        src="./img/song-poster/i-miss-you.png"
+                        alt="I miss you song poster"
+                        class="poster"
+                    />
+                    <div class="">
+                        <p class="song-name">I Miss you</p>
+                        <p class="album-name">Dieu Tran - 30000 plays</p>
+                    </div>
+                </div>
+                <!-- music player  -->
+                <div
+                    class="flex items-center justify-between gap-x-2 lg:w-[250px] xl:w-[320px] xl:justify-self-center"
+                >
+                    <p class="text-[12px] text-[#AEAEAE]">0.59</p>
+                    <div class="h-1 relative grow">
+                        <div
+                            class="absolute left-0 top-0 h-1 bg-yellow rounded-[4px] w-3/6 z-10"
+                        ></div>
+                        <div
+                            class="absolute left-0 top-0 w-full h-1 bg-[#404040] rounded-[4px]"
+                        ></div>
+                    </div>
+                    <p class="text-[12px] text-[#AEAEAE]">2.36</p>
+                </div>
+                <!-- music control  -->
+                <div
+                    class="flex justify-between lg:items-center md:w-[300px] lg:w-[220px] lg:justify-self-center"
+                >
+                    <button class="w-[14px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/shuffle_icon.png"
+                            alt="shuffle icon"
+                        />
+                    </button>
+                    <button class="w-[14px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/previous_icon.png"
+                            alt="previous icon"
+                        />
+                    </button>
+                    <button class="w-[32px] h-[32px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/pause_icon.png"
+                            alt="pause icon"
+                        />
+                    </button>
+                    <button class="w-[14px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/next_icon.png"
+                            alt="next icon"
+                        />
+                    </button>
+                    <button class="w-[14px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/repeat_icon.png"
+                            alt="repeat icon"
+                        />
+                    </button>
+                </div>
+                <!-- others control  -->
+                <div
+                    class="flex justify-between md:w-[300px] md:justify-self-end lg:w-[220px] lg:justify-self-auto xl:justify-self-end"
+                >
+                    <button class="w-[16px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/queue.png"
+                            alt="queue icon"
+                        />
+                    </button>
+                    <button class="w-[16px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/devices.png"
+                            alt="device icon"
+                        />
+                    </button>
+                    <button class="w-[95px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/volume.png"
+                            alt="volume icon"
+                        />
+                    </button>
+                    <button class="w-[16px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/expand.png"
+                            alt="expand icon"
+                        />
+                    </button>
                 </div>
             </div>
         </div>
