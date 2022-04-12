@@ -341,12 +341,28 @@
                     </ul>
                 </nav>
             </aside>
-            <!-- right side contents  -->
+            <!------------------ right side contents  ------------------->
             <section class="right__content">
                 <!----------------- top header ------------ -->
-                <header class="bg-dark-blue border-b-1 border-border">
-                    <div class="box">
-                        <h1 class="title-1">howdy john!</h1>
+                <header
+                    class="bg-dark-blue border-b-1 border-border box flex flex-col gap-y-6 md:flex-row md:justify-between lg:items-center"
+                >
+                    <!-- title  -->
+                    <h1 class="title-1">howdy john!</h1>
+                    <!-- search bar  -->
+                    <div class="w-full max-w-[300px] flex items-center">
+                        <input
+                            type="text"
+                            class="w-full text-[14px] leading-[19px] font-[500] text-white placeholder:text-[rgba(255, 255, 255, 0.5)] bg-transparent outline-none lg:w-[320px]"
+                            placeholder="Search a song, an album or an artist"
+                        />
+                        <button class="w-[20px] h-[20px]">
+                            <img
+                                class=" w-full"
+                                src="./img/icons/search-normal.png"
+                                alt="search icon"
+                            />
+                        </button>
                     </div>
                 </header>
                 <!------------ song box recently played and most played-----------  -->
@@ -1157,6 +1173,18 @@
                     </div>
                 </section>
             </section>
+            <!------------------ music player  --------------------->
+            <div class="w-screen">
+                <div class="w-full md:container">
+                    <!-- music details   -->
+
+                    <!-- player control  -->
+
+                    <!-- music control  -->
+
+                    <!-- control  -->
+                </div>
+            </div>
         </div>
     </body>
 </html>

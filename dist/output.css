@@ -610,6 +610,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 24px;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
 .w-\[220px\] {
   width: 220px;
 }
@@ -626,8 +630,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 10rem;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
 .max-w-\[160px\] {
   max-width: 160px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .grid-cols-\[220px_1fr\] {
@@ -675,6 +699,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 60px;
 }
 
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
 .border-1 {
   border-width: 1px;
 }
@@ -699,6 +727,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-dark-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(5 17 32 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .px-0 {
@@ -752,6 +784,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 40px;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-\[11px\] {
   font-size: 11px;
 }
@@ -765,8 +801,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .font-\[500\] {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -783,6 +827,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-\[20px\] {
   line-height: 20px;
+}
+
+.leading-\[19px\] {
+  line-height: 19px;
 }
 
 .tracking-\[0\.18em\] {
@@ -818,12 +866,46 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(218 218 218 / var(--tw-text-opacity));
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.outline {
+  outline-style: solid;
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 :root {
   font-family: "Montserrat", sans-serif;
+}
+
+.placeholder\:text-right::-moz-placeholder {
+  text-align: right;
+}
+
+.placeholder\:text-right:-ms-input-placeholder {
+  text-align: right;
+}
+
+.placeholder\:text-right::placeholder {
+  text-align: right;
+}
+
+.focus-visible\:outline-none:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus-visible\:outline:focus-visible {
+  outline-style: solid;
+}
+
+.focus-visible\:outline-0:focus-visible {
+  outline-width: 0px;
 }
 
 @media (min-width: 640px) {
@@ -863,6 +945,40 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+    }
+  }
+
   .md\:box {
     padding: 1.25rem;
   }
@@ -893,6 +1009,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:grid-cols-\[220px_1fr\] {
     grid-template-columns: 220px 1fr;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:gap-x-20 {
@@ -953,8 +1077,28 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 220px;
   }
 
+  .lg\:w-\[350px\] {
+    width: 350px;
+  }
+
+  .lg\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .lg\:w-\[320px\] {
+    width: 320px;
+  }
+
   .lg\:grid-cols-\[220px_1fr\] {
     grid-template-columns: 220px 1fr;
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:px-\[50px\] {
