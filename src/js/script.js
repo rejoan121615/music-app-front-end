@@ -1,6 +1,5 @@
 "use strict";
 
-console.log("running");
 
 const menuBtn = document.getElementById("menu-btn");
 const NavBar = document.getElementById("left-navigation");
