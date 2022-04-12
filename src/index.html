@@ -20,7 +20,8 @@
         <div class="lg:grid lg:grid-cols-[220px_1fr] lg:pl-[50px] xl:pl-[65px]">
             <!----------------- left side navigation menu  ----------------->
             <aside
-                class=" fixed bg-dark-blue w-full top-[150px] pl-6 h-full border-r-1 pt-[40px] border-border 
+              id="left-navigation"
+                class=" fixed bg-dark-blue w-full top-[150px] left-[-100%] pl-6 h-full border-r-1 pt-[40px] border-border 
                     lg:relative lg:top-0 lg:bg-transparent
                 xl:pt-[50px] lg:block lg:w-[220px] px-0"
             >
@@ -354,7 +355,7 @@
                 >
                     <!-- hamberger menu  -->
                     <div class="hambur-container w-8 h-8 relative order-2 lg:hidden">
-                      <input class="checkbox" type="checkbox" name="" id="" />
+                      <input class="checkbox" type="checkbox" name="" id="menu-btn" />
                       <div class="hamburger-lines">
                         <span class="line line1 bg-milk"></span>
                         <span class="line line2 bg-milk"></span>
@@ -1589,5 +1590,7 @@
                 </div>
             </div>
         </div>
+        <!-- js file  -->
+        <script src="./js/script.js"></script>
     </body>
 </html>
