@@ -20,7 +20,9 @@
         <div class="lg:grid lg:grid-cols-[220px_1fr] lg:pl-[50px] xl:pl-[65px]">
             <!----------------- left side navigation menu  ----------------->
             <aside
-                class=" fixed bg-dark-blue w-full top-[150px] pl-6 h-full border-r-1 pt-[40px] xl:pt-[50px] border-border lg:block lg:w-[220px] px-0"
+                class=" fixed bg-dark-blue w-full top-[150px] pl-6 h-full border-r-1 pt-[40px] border-border 
+                    lg:relative lg:top-0 lg:bg-transparent
+                xl:pt-[50px] lg:block lg:w-[220px] px-0"
             >
                 <!-- back button  -->
                 <button class="flex justify-start items-center">
@@ -342,16 +344,16 @@
                 </nav>
             </aside>
             <!------------------ right side contents  ------------------->
-            <section class="right__content pb-24">
+            <section class="right__content pb-24 lg:pb-[20px] xl:pb-2 ">
                 <!----------------- top header ------------ -->
                 <header
                     class="
                     bg-dark-blue border-b-1 border-border box flex flex-wrap gap-y-6
                     items-center justify-between
-                     md:flex-row md:justify-between lg:items-center"
+                     md:flex-row md:justify-between lg:items-center lg:justify-between"
                 >
                     <!-- hamberger menu  -->
-                    <div class="nav-container w-8 h-8 relative order-2">
+                    <div class="hambur-container w-8 h-8 relative order-2 lg:hidden">
                       <input class="checkbox" type="checkbox" name="" id="" />
                       <div class="hamburger-lines">
                         <span class="line line1 bg-milk"></span>
@@ -360,7 +362,7 @@
                       </div>  
                   </div>
                     <!-- title  -->
-                    <h1 class="title-1 order-1 w-full text-center">howdy john!</h1>
+                    <h1 class="title-1 order-1 w-full text-center lg:w-[initial]  ">howdy john!</h1>
                     <!-- search bar  -->
                     <div class=" w-9/12  max-w-[350px] h-[45px] flex items-center order-3 relative">
                         <input

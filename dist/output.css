@@ -600,7 +600,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* hamberger menu  */
 
-.nav-container .checkbox {
+.hambur-container .checkbox {
   position: absolute;
   display: block;
   height: 32px;
@@ -612,7 +612,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
-.nav-container .hamburger-lines {
+.hambur-container .hamburger-lines {
   display: block;
   height: 26px;
   width: 32px;
@@ -625,45 +625,41 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.nav-container .hamburger-lines .line {
+.hambur-container .hamburger-lines .line {
   display: block;
   height: 4px;
   width: 100%;
   border-radius: 10px;
 }
 
-.nav-container .hamburger-lines .line1 {
+.hambur-container .hamburger-lines .line1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
 }
 
-.nav-container .hamburger-lines .line2 {
+.hambur-container .hamburger-lines .line2 {
   transition: transform 0.2s ease-in-out;
 }
 
-.nav-container .hamburger-lines .line3 {
+.hambur-container .hamburger-lines .line3 {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
 
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
+.hambur-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+.hambur-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
   transform: rotate(45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+.hambur-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
   transform: scaleY(0);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+.hambur-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
-}
-
-.static {
-  position: static;
 }
 
 .fixed {
@@ -678,9 +674,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
+.top-\[150px\] {
+  top: 150px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-4 {
+  right: 1rem;
 }
 
 .bottom-0 {
@@ -693,38 +696,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .top-0 {
   top: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.right-2 {
-  right: 0.5rem;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-28 {
-  top: 7rem;
-}
-
-.top-36 {
-  top: 9rem;
-}
-
-.top-\[150px\] {
-  top: 150px;
 }
 
 .z-10 {
@@ -784,12 +755,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: contents;
 }
 
-.hidden {
-  display: none;
+.h-full {
+  height: 100%;
 }
 
 .h-8 {
   height: 2rem;
+}
+
+.h-\[45px\] {
+  height: 45px;
 }
 
 .h-\[20px\] {
@@ -808,12 +783,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 32px;
 }
 
-.h-\[45px\] {
-  height: 45px;
-}
-
-.h-full {
-  height: 100%;
+.w-full {
+  width: 100%;
 }
 
 .w-6 {
@@ -824,8 +795,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2rem;
 }
 
-.w-full {
-  width: 100%;
+.w-9\/12 {
+  width: 75%;
 }
 
 .w-\[20px\] {
@@ -860,28 +831,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 95px;
 }
 
-.w-5\/6 {
-  width: 83.333333%;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-9\/12 {
-  width: 75%;
-}
-
-.max-w-\[300px\] {
-  max-width: 300px;
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .max-w-\[160px\] {
   max-width: 160px;
-}
-
-.max-w-\[350px\] {
-  max-width: 350px;
 }
 
 .grow {
@@ -970,10 +925,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgba(255, 255, 255, 0.07);
 }
 
-.border-transparent {
-  border-color: transparent;
-}
-
 .bg-dark-blue-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(2 11 22 / var(--tw-bg-opacity));
@@ -1008,11 +959,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(64 64 64 / var(--tw-bg-opacity));
 }
 
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -1027,6 +973,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 14px;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1037,14 +988,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
-.px-6 {
+.pl-6 {
   padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .pt-\[40px\] {
@@ -1069,10 +1014,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-\[48px\] {
   padding-top: 48px;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
 }
 
 .text-center {
@@ -1255,6 +1196,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1263,12 +1212,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: grid;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:w-\[220px\] {
     width: 220px;
   }
 
-  .lg\:w-\[350px\] {
-    width: 350px;
+  .lg\:w-\[initial\] {
+    width: initial;
   }
 
   .lg\:w-\[250px\] {
@@ -1308,6 +1261,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-self: center;
   }
 
+  .lg\:bg-transparent {
+    background-color: transparent;
+  }
+
   .lg\:py-\[16px\] {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -1315,6 +1272,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pl-\[50px\] {
     padding-left: 50px;
+  }
+
+  .lg\:pb-\[20px\] {
+    padding-bottom: 20px;
   }
 }
 
@@ -1346,5 +1307,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:pt-\[50px\] {
     padding-top: 50px;
+  }
+
+  .xl\:pb-2 {
+    padding-bottom: 0.5rem;
   }
 }
