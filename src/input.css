@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    font-family: "Montserrat", sans-serif;
+}
+
+@layer components {
+    /* texts  */
+    .title-1 {
+        @apply font-normal text-[32px] text-milk leading-[39px] tracking-[0.01em] capitalize;
+    }
+    .title-3 {
+        @apply font-normal text-[24px] text-milk leading-[29px] tracking-[0.01em] capitalize;
+    }
+
+    /* song component  */
+    .poster {
+        @apply w-12 h-12;
+    }
+    .song-name {
+        @apply font-semibold text-base text-milk leading-[20px] tracking-[0.01em];
+    }
+
+    .album-name {
+        @apply font-normal text-[13px] leading-[16px] tracking-[0.01em] text-[#B3B3B3];
+    }
+
+    .view-all-btn {
+        @apply capitalize font-semibold 
+        text-[14px] leading-[17px] tracking-[0.01em]
+         text-white bg-[#e3aa27] p-[7.5px_10px] rounded-[20px];
+    }
+
+    .box {
+        @apply p-5 sm:p-6 xl:p-8;
+    }
+    .right__content {
+        @apply bg-dark-blue;
+    }
+
+    /* song component  */
+}
