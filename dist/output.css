@@ -828,6 +828,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 4px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-1 {
+  border-width: 1px;
+}
+
 .border-r-1 {
   border-right-width: 1px;
 }
@@ -838,6 +846,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-border {
   border-color: rgba(255, 255, 255, 0.07);
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .bg-dark-blue-900 {
@@ -869,6 +886,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(64 64 64 / var(--tw-bg-opacity));
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -897,6 +918,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pt-\[40px\] {
@@ -1019,8 +1050,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-offset: 2px;
 }
 
+.outline {
+  outline-style: solid;
+}
+
 :root {
   font-family: "Montserrat", sans-serif;
+}
+
+.focus\:border-1:focus {
+  border-width: 1px;
+}
+
+.focus\:border-red-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.focus\:border-border:focus {
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+.focus\:border-milk:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(218 218 218 / var(--tw-border-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1176,6 +1229,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-\[250px\] {
     width: 250px;
+  }
+
+  .lg\:w-\[350px\] {
+    width: 350px;
   }
 
   .lg\:grid-cols-\[220px_1fr\] {
