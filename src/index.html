@@ -20,7 +20,7 @@
         <div class="lg:grid lg:grid-cols-[220px_1fr] lg:pl-[50px] xl:pl-[65px]">
             <!----------------- left side navigation menu  ----------------->
             <aside
-                class="hidden border-r-1 pt-[40px] xl:pt-[50px] border-border lg:block lg:w-[220px] px-0"
+                class=" fixed bg-dark-blue w-full top-[150px] pl-6 h-full border-r-1 pt-[40px] xl:pt-[50px] border-border lg:block lg:w-[220px] px-0"
             >
                 <!-- back button  -->
                 <button class="flex justify-start items-center">
@@ -345,18 +345,36 @@
             <section class="right__content pb-24">
                 <!----------------- top header ------------ -->
                 <header
-                    class="bg-dark-blue border-b-1 border-border box flex flex-col gap-y-6 md:flex-row md:justify-between lg:items-center"
+                    class="
+                    bg-dark-blue border-b-1 border-border box flex flex-wrap gap-y-6
+                    items-center justify-between
+                     md:flex-row md:justify-between lg:items-center"
                 >
+                    <!-- hamberger menu  -->
+                    <div class="nav-container w-8 h-8 relative order-2">
+                      <input class="checkbox" type="checkbox" name="" id="" />
+                      <div class="hamburger-lines">
+                        <span class="line line1 bg-milk"></span>
+                        <span class="line line2 bg-milk"></span>
+                        <span class="line line3 bg-milk"></span>
+                      </div>  
+                  </div>
                     <!-- title  -->
-                    <h1 class="title-1">howdy john!</h1>
+                    <h1 class="title-1 order-1 w-full text-center">howdy john!</h1>
                     <!-- search bar  -->
-                    <div class="w-full max-w-[300px] flex items-center">
+                    <div class=" w-9/12  max-w-[350px] h-[45px] flex items-center order-3 relative">
                         <input
                             type="text"
-                            class="w-full p-3 rounded-full text-[14px] leading-[19px] font-[500] text-white placeholder:text-[rgba(255, 255, 255, 0.5)] bg-transparent outline-none border-1 border-transparent focus:border-1 focus:border-milk lg:w-[350px]"
+                            class="
+                            w-full p-3 rounded-full text-[14px] leading-[19px]
+                             font-[500] text-white placeholder:text-[rgba(255, 255, 255, 0.5)]
+                              bg-transparent outline-none border-1 border-border 
+                              focus:border-1 focus:border-milk
+                              absolute right-0 px-5 
+                              "
                             placeholder="Search a song, an album or an artist"
                         />
-                        <button class="w-[20px] h-[20px]">
+                        <button class="w-[20px] h-[20px] absolute right-4 ">
                             <img
                                 class="w-full"
                                 src="./img/icons/search-normal.png"

@@ -598,7 +598,73 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(5 17 32 / var(--tw-bg-opacity));
 }
 
-/* song component  */
+/* hamberger menu  */
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.static {
+  position: static;
+}
 
 .fixed {
   position: fixed;
@@ -610,6 +676,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .bottom-0 {
@@ -624,8 +695,52 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-28 {
+  top: 7rem;
+}
+
+.top-36 {
+  top: 9rem;
+}
+
+.top-\[150px\] {
+  top: 150px;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-3 {
+  order: 3;
 }
 
 .mx-auto {
@@ -673,6 +788,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-\[20px\] {
   height: 20px;
 }
@@ -685,16 +804,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0.25rem;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .h-\[32px\] {
   height: 32px;
 }
 
+.h-\[45px\] {
+  height: 45px;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-6 {
   width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-full {
@@ -711,10 +838,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-40 {
   width: 10rem;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .w-3\/6 {
@@ -737,6 +860,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 95px;
 }
 
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-9\/12 {
+  width: 75%;
+}
+
 .max-w-\[300px\] {
   max-width: 300px;
 }
@@ -745,16 +880,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 160px;
 }
 
-.max-w-\[250px\] {
-  max-width: 250px;
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .grow {
   flex-grow: 1;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-1 {
@@ -806,9 +937,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 60px;
 }
 
-.gap-x-3 {
-  -moz-column-gap: 0.75rem;
-       column-gap: 0.75rem;
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .gap-x-2 {
@@ -816,20 +946,12 @@ Ensure the default browser behavior of the `hidden` attribute.
        column-gap: 0.5rem;
 }
 
-.gap-y-3 {
-  row-gap: 0.75rem;
-}
-
-.gap-y-5 {
-  row-gap: 1.25rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-\[4px\] {
   border-radius: 4px;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .border-1 {
@@ -848,11 +970,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgba(255, 255, 255, 0.07);
 }
 
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
-
 .border-transparent {
   border-color: transparent;
 }
@@ -865,6 +982,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-dark-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(5 17 32 / var(--tw-bg-opacity));
+}
+
+.bg-milk {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 218 218 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -886,6 +1008,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(64 64 64 / var(--tw-bg-opacity));
 }
 
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -900,14 +1027,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 14px;
 }
 
-.py-\[16px\] {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .px-3 {
@@ -915,23 +1037,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
-.py-\[20px\] {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pt-\[40px\] {
   padding-top: 40px;
+}
+
+.pt-\[24px\] {
+  padding-top: 24px;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .pb-0 {
@@ -946,20 +1071,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 48px;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
+.pl-6 {
+  padding-left: 1.5rem;
 }
 
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
-}
-
-.pt-\[24px\] {
-  padding-top: 24px;
+.text-center {
+  text-align: center;
 }
 
 .text-\[11px\] {
@@ -1050,25 +1167,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-offset: 2px;
 }
 
-.outline {
-  outline-style: solid;
-}
-
 :root {
   font-family: "Montserrat", sans-serif;
 }
 
 .focus\:border-1:focus {
   border-width: 1px;
-}
-
-.focus\:border-red-500:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
-
-.focus\:border-border:focus {
-  border-color: rgba(255, 255, 255, 0.07);
 }
 
 .focus\:border-milk:focus {
@@ -1083,14 +1187,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:grid {
     display: grid;
-  }
-
-  .sm\:max-w-\[250px\] {
-    max-width: 250px;
-  }
-
-  .sm\:max-w-\[300px\] {
-    max-width: 300px;
   }
 
   .sm\:grid-cols-2 {
@@ -1109,39 +1205,30 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: space-between;
   }
 
-  .sm\:gap-x-12 {
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
-  }
-
-  .sm\:gap-x-\[60px\] {
-    -moz-column-gap: 60px;
-         column-gap: 60px;
-  }
-
   .sm\:gap-x-5 {
     -moz-column-gap: 1.25rem;
          column-gap: 1.25rem;
   }
 
-  .sm\:gap-x-8 {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+  .sm\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 
   .sm\:gap-x-\[40px\] {
     -moz-column-gap: 40px;
          column-gap: 40px;
   }
+
+  .sm\:gap-x-8 {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:w-\[300px\] {
     width: 300px;
-  }
-
-  .md\:max-w-\[300px\] {
-    max-width: 300px;
   }
 
   .md\:flex-row {
@@ -1157,11 +1244,6 @@ Ensure the default browser behavior of the `hidden` attribute.
          column-gap: 5rem;
   }
 
-  .md\:gap-x-12 {
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
-  }
-
   .md\:gap-x-14 {
     -moz-column-gap: 3.5rem;
          column-gap: 3.5rem;
@@ -1173,40 +1255,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
-  .lg\:container {
-    width: 100%;
-  }
-
-  @media (min-width: 640px) {
-    .lg\:container {
-      max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .lg\:container {
-      max-width: 768px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .lg\:container {
-      max-width: 1024px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .lg\:container {
-      max-width: 1280px;
-    }
-  }
-
-  @media (min-width: 1536px) {
-    .lg\:container {
-      max-width: 1536px;
-    }
-  }
-
   .lg\:block {
     display: block;
   }
@@ -1219,84 +1267,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 220px;
   }
 
-  .lg\:w-\[320px\] {
-    width: 320px;
-  }
-
-  .lg\:w-auto {
-    width: auto;
+  .lg\:w-\[350px\] {
+    width: 350px;
   }
 
   .lg\:w-\[250px\] {
     width: 250px;
   }
 
-  .lg\:w-\[350px\] {
-    width: 350px;
-  }
-
   .lg\:grid-cols-\[220px_1fr\] {
     grid-template-columns: 220px 1fr;
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-\[\] {
-    grid-template-columns: ;
-  }
-
-  .lg\:grid-cols-\[1\.5fr\] {
-    grid-template-columns: 1.5fr;
-  }
-
-  .lg\:grid-cols-\[1\.5fr_\] {
-    grid-template-columns: 1.5fr;
-  }
-
-  .lg\:grid-cols-\[1\.5fr_1\.5fr\] {
-    grid-template-columns: 1.5fr 1.5fr;
-  }
-
-  .lg\:grid-cols-\[1\.5fr_1\.5fr_\] {
-    grid-template-columns: 1.5fr 1.5fr;
-  }
-
-  .lg\:grid-cols-\[1\.5fr_1\.5fr_1\.fr_\] {
-    grid-template-columns: 1.5fr 1.5fr 1.fr;
-  }
-
-  .lg\:grid-cols-\[1\.5fr_1\.5fr_1fr_\] {
-    grid-template-columns: 1.5fr 1.5fr 1fr;
-  }
-
-  .lg\:grid-cols-\[1\.5fr_1\.5fr_1fr_1fr\] {
-    grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
-  }
-
-  .lg\:grid-cols-\[1\.5fr_1\.2fr_1fr_1fr\] {
-    grid-template-columns: 1.5fr 1.2fr 1fr 1fr;
-  }
-
-  .lg\:grid-cols-\[1\.2fr_1\.2fr_1fr_1fr\] {
-    grid-template-columns: 1.2fr 1.2fr 1fr 1fr;
-  }
-
-  .lg\:grid-cols-\[250px\] {
-    grid-template-columns: 250px;
-  }
-
-  .lg\:grid-cols-\[250px_\] {
-    grid-template-columns: 250px;
-  }
-
-  .lg\:grid-cols-\[250px_250\] {
-    grid-template-columns: 250px 250;
-  }
-
-  .lg\:grid-cols-\[250px_250px_\] {
-    grid-template-columns: 250px 250px;
   }
 
   .lg\:grid-cols-\[250px_250px_220px_220px\] {
@@ -1313,11 +1293,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:gap-0 {
     gap: 0px;
-  }
-
-  .lg\:gap-x-5 {
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
   }
 
   .lg\:gap-x-\[60px\] {
@@ -1338,11 +1313,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 16px;
   }
 
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .lg\:pl-\[50px\] {
     padding-left: 50px;
   }
@@ -1353,20 +1323,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 320px;
   }
 
-  .xl\:grid-cols-\[320px_320px_320px_320px\] {
-    grid-template-columns: 320px 320px 320px 320px;
-  }
-
-  .xl\:grid-cols-\[320px_320px_220px_320px\] {
-    grid-template-columns: 320px 320px 220px 320px;
-  }
-
   .xl\:grid-cols-\[320px_320px_225px_225px\] {
     grid-template-columns: 320px 320px 225px 225px;
-  }
-
-  .xl\:justify-between {
-    justify-content: space-between;
   }
 
   .xl\:gap-x-24 {
