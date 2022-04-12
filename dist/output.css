@@ -666,6 +666,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition: left 0.5s ease-in-out;
 }
 
+/* song hover effect  */
+
+/* .song-hover {
+        @apply cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk hover:rounded-[8px] transition-all duration-500;
+    } */
+
 .fixed {
   position: fixed;
 }
@@ -678,8 +684,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.top-\[150px\] {
-  top: 150px;
+.top-\[148px\] {
+  top: 148px;
+}
+
+.left-\[-100\%\] {
+  left: -100%;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .right-0 {
@@ -692,26 +710,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bottom-0 {
   bottom: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.left-\[\] {
-  left: ;
-}
-
-.left-\[-100\%\] {
-  left: -100%;
-}
-
-.top-\[148px\] {
-  top: 148px;
 }
 
 .z-10 {
@@ -747,6 +745,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.5rem;
 }
 
+.mt-\[150px\] {
+  margin-top: 150px;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -757,14 +759,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-\[10px\] {
   margin-top: 10px;
-}
-
-.mt-\[157px\] {
-  margin-top: 157px;
-}
-
-.mt-\[150px\] {
-  margin-top: 150px;
 }
 
 .flex {
@@ -867,6 +861,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-grow: 1;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -947,6 +945,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-border {
   border-color: rgba(255, 255, 255, 0.07);
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .bg-dark-blue-900 {
@@ -1132,8 +1134,59 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-offset: 2px;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 :root {
   font-family: "Montserrat", sans-serif;
+}
+
+.hover\:rounded-\[8px\]:hover {
+  border-radius: 8px;
+}
+
+.hover\:border-1:hover {
+  border-width: 1px;
+}
+
+.hover\:border-milk:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(218 218 218 / var(--tw-border-opacity));
+}
+
+.hover\:border-dark-blue:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(5 17 32 / var(--tw-border-opacity));
+}
+
+.hover\:border-dark-blue-900:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(2 11 22 / var(--tw-border-opacity));
+}
+
+.hover\:border-dark-blue-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(17 30 49 / var(--tw-border-opacity));
+}
+
+.hover\:border-border:hover {
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+.hover\:border-milk-dark:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(179 179 179 / var(--tw-border-opacity));
+}
+
+.hover\:p-\[5px_6px\]:hover {
+  padding: 5px 6px;
 }
 
 .focus\:border-1:focus {
@@ -1146,12 +1199,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-\[6px\] {
-    margin-top: 6px;
-  }
-
   .sm\:mt-\[157px\] {
     margin-top: 157px;
+  }
+
+  .sm\:mt-\[6px\] {
+    margin-top: 6px;
   }
 
   .sm\:grid {

@@ -114,4 +114,9 @@
     #left-navigation {
         transition: left 0.5s ease-in-out;
     }
+
+    /* song hover effect  */
+    /* .song-hover {
+        @apply cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk hover:rounded-[8px] transition-all duration-500;
+    } */
 }
