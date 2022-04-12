@@ -915,6 +915,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 48px;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pt-\[24px\] {
+  padding-top: 24px;
+}
+
 .text-\[11px\] {
   font-size: 11px;
 }
@@ -1058,6 +1074,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:gap-x-8 {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+  }
+
+  .sm\:gap-x-\[40px\] {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
 
@@ -1205,8 +1226,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: 1.2fr 1.2fr 1fr 1fr;
   }
 
+  .lg\:grid-cols-\[250px\] {
+    grid-template-columns: 250px;
+  }
+
+  .lg\:grid-cols-\[250px_\] {
+    grid-template-columns: 250px;
+  }
+
+  .lg\:grid-cols-\[250px_250\] {
+    grid-template-columns: 250px 250;
+  }
+
+  .lg\:grid-cols-\[250px_250px_\] {
+    grid-template-columns: 250px 250px;
+  }
+
+  .lg\:grid-cols-\[250px_250px_220px_220px\] {
+    grid-template-columns: 250px 250px 220px 220px;
+  }
+
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-0 {
@@ -1216,6 +1261,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:gap-x-5 {
     -moz-column-gap: 1.25rem;
          column-gap: 1.25rem;
+  }
+
+  .lg\:gap-x-\[60px\] {
+    -moz-column-gap: 60px;
+         column-gap: 60px;
   }
 
   .lg\:justify-self-auto {
@@ -1244,6 +1294,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1280px) {
   .xl\:w-\[320px\] {
     width: 320px;
+  }
+
+  .xl\:grid-cols-\[320px_320px_320px_320px\] {
+    grid-template-columns: 320px 320px 320px 320px;
+  }
+
+  .xl\:grid-cols-\[320px_320px_220px_320px\] {
+    grid-template-columns: 320px 320px 220px 320px;
+  }
+
+  .xl\:grid-cols-\[320px_320px_225px_225px\] {
+    grid-template-columns: 320px 320px 225px 225px;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
   }
 
   .xl\:gap-x-24 {
