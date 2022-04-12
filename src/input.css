@@ -6,6 +6,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
 @layer components {
     /* texts  */
     .title-1 {
@@ -27,7 +28,8 @@
     }
 
     .album-name,
-    .artist-name {
+    .artist-name,
+    .para-sm {
         @apply font-normal text-[13px] mt-[6px] leading-[16px] tracking-[0.01em] text-[#B3B3B3];
     }
 
@@ -47,6 +49,7 @@
     .right__content {
         @apply bg-dark-blue;
     }
+    
 
     /* song component  */
 }

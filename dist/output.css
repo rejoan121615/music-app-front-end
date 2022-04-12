@@ -512,7 +512,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(218 218 218 / var(--tw-text-opacity));
 }
 
-.album-name, .artist-name {
+.album-name, .artist-name, .para-sm {
   margin-top: 6px;
   font-size: 13px;
   font-weight: 400;
@@ -566,6 +566,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* song component  */
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -586,8 +594,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+.contents {
+  display: contents;
+}
+
+.hidden {
+  display: none;
+}
+
 .h-\[24px\] {
   height: 24px;
+}
+
+.w-\[220px\] {
+  width: 220px;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-\[24px\] {
@@ -602,6 +630,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 160px;
 }
 
+.grid-cols-\[220px_1fr\] {
+  grid-template-columns: 220px 1fr;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -612,6 +644,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -639,17 +675,45 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 60px;
 }
 
+.border-1 {
+  border-width: 1px;
+}
+
 .border-b-1 {
   border-bottom-width: 1px;
+}
+
+.border-r-1 {
+  border-right-width: 1px;
 }
 
 .border-border {
   border-color: rgba(255, 255, 255, 0.07);
 }
 
+.bg-dark-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 11 22 / var(--tw-bg-opacity));
+}
+
 .bg-dark-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(5 17 32 / var(--tw-bg-opacity));
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .pb-0 {
@@ -664,34 +728,98 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 48px;
 }
 
+.pr-0 {
+  padding-right: 0px;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[50\] {
+  padding-top: 50;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
+}
+
+.pt-\[400px\] {
+  padding-top: 400px;
+}
+
+.pt-\[40px\] {
+  padding-top: 40px;
+}
+
+.text-\[11px\] {
+  font-size: 11px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-\[13px\] {
-  font-size: 13px;
 }
 
 .font-\[500\] {
   font-weight: 500;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.leading-\[15px\] {
+  line-height: 15px;
+}
+
 .leading-\[20px\] {
   line-height: 20px;
 }
 
-.leading-\[16px\] {
-  line-height: 16px;
+.tracking-\[0\.18em\] {
+  letter-spacing: 0.18em;
 }
 
 .tracking-\[0\.01em\] {
   letter-spacing: 0.01em;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-milk-dark {
+  --tw-text-opacity: 1;
+  color: rgb(179 179 179 / var(--tw-text-opacity));
+}
+
 .text-\[\#DADADA\] {
   --tw-text-opacity: 1;
   color: rgb(218 218 218 / var(--tw-text-opacity));
+}
+
+.text-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(227 170 39 / var(--tw-text-opacity));
+}
+
+.text-milk {
+  --tw-text-opacity: 1;
+  color: rgb(218 218 218 / var(--tw-text-opacity));
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 :root {
@@ -701,10 +829,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 640px) {
   .sm\:mt-\[6px\] {
     margin-top: 6px;
-  }
-
-  .sm\:flex {
-    display: flex;
   }
 
   .sm\:grid {
@@ -732,11 +856,6 @@ Ensure the default browser behavior of the `hidden` attribute.
          column-gap: 3rem;
   }
 
-  .sm\:gap-x-\[160px\] {
-    -moz-column-gap: 160px;
-         column-gap: 160px;
-  }
-
   .sm\:gap-x-\[60px\] {
     -moz-column-gap: 60px;
          column-gap: 60px;
@@ -744,9 +863,119 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:box {
+    padding: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .md\:box {
+      padding: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:box {
+      padding: 2rem;
+    }
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:w-\[220px\] {
+    width: 220px;
+  }
+
+  .md\:grid-cols-\[220px_1fr\] {
+    grid-template-columns: 220px 1fr;
+  }
+
   .md\:gap-x-20 {
     -moz-column-gap: 5rem;
          column-gap: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .lg\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .lg\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .lg\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .lg\:container {
+      max-width: 1536px;
+    }
+  }
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:w-\[220px\] {
+    width: 220px;
+  }
+
+  .lg\:grid-cols-\[220px_1fr\] {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .lg\:px-\[50px\] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .lg\:pl-\[50px\] {
+    padding-left: 50px;
+  }
+
+  .lg\:pt-40 {
+    padding-top: 10rem;
+  }
+
+  .lg\:pt-\[40\] {
+    padding-top: 40;
+  }
+
+  .lg\:pt-\[40px\] {
+    padding-top: 40px;
   }
 }
 
@@ -754,5 +983,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:gap-x-24 {
     -moz-column-gap: 6rem;
          column-gap: 6rem;
+  }
+
+  .xl\:px-\[55px\] {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .xl\:px-\[65px\] {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .xl\:pl-\[65px\] {
+    padding-left: 65px;
+  }
+
+  .xl\:pt-\[50px\] {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:px-\[65px\] {
+    padding-left: 65px;
+    padding-right: 65px;
   }
 }
