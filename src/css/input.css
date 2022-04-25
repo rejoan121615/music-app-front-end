@@ -14,7 +14,7 @@
     .title-3 {
         @apply font-normal text-[24px] text-milk leading-[29px] tracking-[0.01em] capitalize;
     }
-    
+
 
     /* song component  */
     .poster {
@@ -49,6 +49,37 @@
     .right__content {
         @apply bg-dark-blue;
     }
+
+    .nav-item {
+        @apply py-[14px];
+    }
+
+    .nav-item.active {
+        
+    }
+    .nav-item.active a p {
+        @apply text-yellow;
+    }
+    .nav-item.active a svg path {
+        @apply stroke-yellow;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* hamberger menu  */
 
     .hambur-container .checkbox {

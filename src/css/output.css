@@ -598,6 +598,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(5 17 32 / var(--tw-bg-opacity));
 }
 
+.nav-item {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.nav-item.active {
+}
+
+.nav-item.active a p {
+  --tw-text-opacity: 1;
+  color: rgb(227 170 39 / var(--tw-text-opacity));
+}
+
+.nav-item.active a svg path {
+  stroke: #E3AA27;
+}
+
 /* hamberger menu  */
 
 .hambur-container .checkbox {
@@ -773,6 +790,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: contents;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-full {
   height: 100%;
 }
@@ -789,16 +810,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20px;
 }
 
+.h-\[24px\] {
+  height: 24px;
+}
+
 .h-1 {
   height: 0.25rem;
 }
 
 .h-\[32px\] {
   height: 32px;
-}
-
-.h-\[24px\] {
-  height: 24px;
 }
 
 .w-full {
@@ -821,6 +842,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20px;
 }
 
+.w-\[24px\] {
+  width: 24px;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
 .w-3\/6 {
   width: 50%;
 }
@@ -839,14 +868,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[95px\] {
   width: 95px;
-}
-
-.w-\[24px\] {
-  width: 24px;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .max-w-\[350px\] {
@@ -906,6 +927,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 37px;
 }
 
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-y-\[60px\] {
+  row-gap: 60px;
+}
+
 .gap-y-5 {
   row-gap: 1.25rem;
 }
@@ -913,14 +942,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
-}
-
-.gap-y-4 {
-  row-gap: 1rem;
-}
-
-.gap-y-\[60px\] {
-  row-gap: 60px;
 }
 
 .rounded-full {
@@ -994,11 +1015,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0px;
 }
 
-.py-\[14px\] {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1012,6 +1028,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .pl-6 {
@@ -1058,13 +1079,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 14px;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .font-\[500\] {
@@ -1119,14 +1140,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(218 218 218 / var(--tw-text-opacity));
 }
 
-.text-\[\#AEAEAE\] {
-  --tw-text-opacity: 1;
-  color: rgb(174 174 174 / var(--tw-text-opacity));
-}
-
 .text-\[\#DADADA\] {
   --tw-text-opacity: 1;
   color: rgb(218 218 218 / var(--tw-text-opacity));
+}
+
+.text-\[\#AEAEAE\] {
+  --tw-text-opacity: 1;
+  color: rgb(174 174 174 / var(--tw-text-opacity));
 }
 
 .outline-none {
@@ -1208,11 +1229,6 @@ Ensure the default browser behavior of the `hidden` attribute.
          column-gap: 1.25rem;
   }
 
-  .sm\:gap-x-8 {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
-  }
-
   .sm\:gap-x-12 {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
@@ -1221,6 +1237,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:gap-x-\[40px\] {
     -moz-column-gap: 40px;
          column-gap: 40px;
+  }
+
+  .sm\:gap-x-8 {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 
@@ -1271,6 +1292,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:grid {
@@ -1345,8 +1370,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px) {
-  .xl\:min-h-screen {
-    min-height: 100vh;
+  .xl\:block {
+    display: block;
   }
 
   .xl\:w-\[320px\] {
