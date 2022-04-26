@@ -1490,6 +1490,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 80px;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:w-\[300px\] {
     width: 300px;
   }
@@ -1498,12 +1502,28 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-\[1fr_1fr_1fr\] {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .md\:grid-cols-\[repeat\(\)\] {
+    grid-template-columns: repeat();
+  }
+
+  .md\:grid-cols-\[220px_220px_220px\] {
+    grid-template-columns: 220px 220px 220px;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:gap-x-14 {
@@ -1562,6 +1582,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
+  .lg\:h-\[220px\] {
+    height: 220px;
+  }
+
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:min-h-screen {
     min-height: 100vh;
   }
@@ -1578,12 +1606,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 250px;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:max-w-\[220px\] {
+    max-width: 220px;
+  }
+
   .lg\:grid-cols-\[220px_1fr\] {
     grid-template-columns: 220px 1fr;
   }
 
   .lg\:grid-cols-\[250px_250px_220px_220px\] {
     grid-template-columns: 250px 250px 220px 220px;
+  }
+
+  .lg\:grid-cols-\[1fr_1fr_1fr\] {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:items-center {
@@ -1598,9 +1646,17 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 0px;
   }
 
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
   .lg\:gap-x-\[60px\] {
     -moz-column-gap: 60px;
          column-gap: 60px;
+  }
+
+  .lg\:gap-y-4 {
+    row-gap: 1rem;
   }
 
   .lg\:justify-self-auto {
@@ -1642,6 +1698,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: 320px 320px 225px 225px;
   }
 
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:gap-\[initial\] {
+    gap: initial;
+  }
+
+  .xl\:gap-4 {
+    gap: 1rem;
+  }
+
   .xl\:gap-x-24 {
     -moz-column-gap: 6rem;
          column-gap: 6rem;
@@ -1665,5 +1733,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:pb-2 {
     padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
