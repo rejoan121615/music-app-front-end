@@ -528,6 +528,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
+  --tw-text-opacity: 1;
+  color: rgb(227 170 39 / var(--tw-text-opacity));
 }
 
 /* song component  */
@@ -695,6 +697,31 @@ Ensure the default browser behavior of the `hidden` attribute.
         @apply cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk hover:rounded-[8px] transition-all duration-500;
     } */
 
+/* small top navigation  */
+
+.sm-nav-item {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(227 170 39 / var(--tw-text-opacity));
+  border-radius: 9999px;
+  background-color: transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-transform: capitalize;
+  line-height: 22px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.sm-nav-item.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 170 39 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .fixed {
   position: fixed;
 }
@@ -707,8 +734,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.top-\[148px\] {
-  top: 148px;
+.top-\[72px\] {
+  top: 72px;
 }
 
 .left-\[-100\%\] {
@@ -733,18 +760,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bottom-0 {
   bottom: 0px;
-}
-
-.top-\[px\] {
-  top: px;
-}
-
-.top-\[80px\] {
-  top: 80px;
-}
-
-.top-\[72px\] {
-  top: 72px;
 }
 
 .z-10 {
@@ -784,12 +799,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.5rem;
 }
 
-.mr-\[16px\] {
-  margin-right: 16px;
+.mr-\[24px\] {
+  margin-right: 24px;
 }
 
-.mt-\[150px\] {
-  margin-top: 150px;
+.mt-\[73px\] {
+  margin-top: 73px;
 }
 
 .mb-6 {
@@ -802,22 +817,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-\[10px\] {
   margin-top: 10px;
-}
-
-.mr-\[24px\] {
-  margin-right: 24px;
-}
-
-.mt-\[px\] {
-  margin-top: px;
-}
-
-.mt-\[80px\] {
-  margin-top: 80px;
-}
-
-.mt-\[73px\] {
-  margin-top: 73px;
 }
 
 .flex {
@@ -932,12 +931,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 .items-center {
@@ -984,6 +991,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .rounded-full {
@@ -1100,6 +1111,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 48px;
 }
 
+.pt-0 {
+  padding-top: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1123,10 +1138,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[12px\] {
   font-size: 12px;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .font-\[500\] {
@@ -1237,12 +1248,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-\[157px\] {
-    margin-top: 157px;
-  }
-
   .sm\:mt-\[6px\] {
     margin-top: 6px;
+  }
+
+  .sm\:mt-\[80px\] {
+    margin-top: 80px;
   }
 
   .sm\:grid {
@@ -1411,6 +1422,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pb-\[20px\] {
     padding-bottom: 20px;
+  }
+
+  .lg\:pt-\[37px\] {
+    padding-top: 37px;
   }
 }
 

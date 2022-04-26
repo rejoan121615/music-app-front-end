@@ -21,7 +21,7 @@
             <!----------------- left side navigation menu  ----------------->
             <aside
                 id="left-navigation"
-                class="fixed bg-dark-blue w-full top-[148px] left-[-100%] pl-6 h-full border-r-1 pt-[40px] border-border lg:relative lg:top-0 lg:bg-transparent lg:left-0 xl:pt-[50px] lg:block lg:w-[220px] px-0"
+                class="fixed bg-dark-blue w-full top-[72px] left-[-100%] pl-6 h-full border-r-1 pt-[40px] border-border md:top-[80px] lg:relative lg:top-0 lg:bg-transparent lg:left-0 xl:pt-[50px] lg:block lg:w-[220px] px-0"
             >
                 <!-- back button  -->
                 <button class="flex justify-start items-center">
@@ -49,10 +49,13 @@
                 </p>
                 <!-- navbar  -->
                 <nav>
-                    <ul class=" pt-[24px]">
+                    <ul class="pt-[24px]">
                         <!-- nav item  -->
                         <li class="nav-item active">
-                            <a href="./index.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./index.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -137,7 +140,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="./all-songs.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./all-songs.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -366,13 +372,17 @@
                     </div>
                     <!-- title  -->
                     <h1
-                        class="title-1 order-1 w-full text-center lg:w-[initial]"
+                        class="hidden title-1 order-1 w-full text-center lg:w-[initial] lg:block"
                     >
                         howdy john!
                     </h1>
+                    <!-- app title  -->
+                    <div class="order-3 lg:hidden">
+                        <h2 class="title-16px text-yellow uppercase">music</h2>
+                    </div>
                     <!-- search bar  -->
                     <div
-                        class="w-9/12 max-w-[350px] h-[45px] flex items-center order-3 relative"
+                        class="w-9/12 max-w-[350px] h-[45px] items-center order-3 relative hidden lg:flex"
                     >
                         <input
                             type="text"
@@ -387,1154 +397,1232 @@
                             />
                         </button>
                     </div>
+                    <!-- profile bar  -->
+                    <div class="order-4 lg:hidden">
+                        <!-- search btn  -->
+                        <button class="w-[20px] mr-[24px]">
+                            <img
+                                class="w-full"
+                                src="./img/icons/search-sm.svg"
+                                alt="search icon"
+                            />
+                        </button>
+                        <!-- profile button  -->
+                        <button class="w-[20px]">
+                            <img
+                                class="w-full"
+                                src="./img/icons/user-small.svg"
+                                alt="user small icon"
+                            />
+                        </button>
+                    </div>
                 </header>
-                <!------------ song box recently played and most played-----------  -->
-                <section class="mt-[150px] sm:mt-[157px] lg:mt-0">
-                    <div
-                        class="box pb-0 pt-[37px] flex flex-col gap-y-[37px] sm:grid sm:grid-cols-2 sm:gap-x-5 sm:justify-between md:gap-x-20 xl:gap-x-24 xxl:gap-x-[102px]"
-                    >
-                        <!-- -------------- most played ----------------  -->
-                        <aside>
-                            <h3 class="title-3">most played</h3>
-                            <!-- song list  -->
-                            <div class="mt-6 flex flex-col gap-y-4">
-                                <!-- songs  -->
-                                <div
-                                    class="song-hover flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/who-are-you.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">Who are you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
-                                                fill="#E3AA27"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/where-are-we-going.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Where are we going?
-                                            </p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you-2.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
-                                                fill="#E3AA27"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you-3.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you-4.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </aside>
-                        <!-- -------------- recently played ----------------- -->
-                        <aside>
-                            <div class="flex justify-between">
-                                <h3 class="title-3">Recently Played</h3>
-                                <a class="view-all-btn" href="">view all</a>
-                            </div>
-                            <!-- song list  -->
-                            <div class="mt-6 flex flex-col gap-y-4">
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/who-are-you.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">Who are you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/where-are-we-going.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Where are we going?
-                                            </p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you-2.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you-3.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
-                                                fill="#E3AA27"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you-4.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </aside>
-                    </div>
-                </section>
-                <!------------------- recently added  -------------------------->
-                <section>
-                    <div class="box pt-[48px]">
-                        <!-- -------------- Recently Added ----------------  -->
-                        <div class="mb-6">
-                            <h3 class="title-3">Recently Added</h3>
+                <!-- content wrap  -->
+                <div class="mt-[73px] sm:mt-[80px] lg:mt-0 lg:pt-[37px]">
+                    <!-- quick navigation menu  -->
+                    <div class="box overflow-auto lg:hidden">
+                        <div class="flex flex-nowrap flex-row">
+                            <a class="sm-nav-item active" href="./index.html">home</a>
+                            <a class="sm-nav-item" href="./index.html">songs</a>
+                            <a class="sm-nav-item" href="./index.html">album</a>
+                            <a class="sm-nav-item" href="./index.html">artists</a>
+                            <a class="sm-nav-item" href="./index.html">favourite's</a>
                         </div>
+                    </div>
+                    <!------------ song box recently played and most played-----------  -->
+                    <section class="">
                         <div
-                            class="flex flex-col gap-y-[37px] sm:grid sm:grid-cols-2 sm:gap-x-12 sm:justify-between md:gap-x-20 xl:gap-x-24 xxl:gap-x-[102px]"
+                            class="box pb-0 flex flex-col gap-y-[37px] pt-0
+                            sm:grid sm:grid-cols-2 sm:gap-x-5 sm:justify-between md:gap-x-20clg:pt-[37px] xl:gap-x-24 
+                            xxl:gap-x-[102px]"
                         >
-                            <aside class="flex flex-col gap-y-4">
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/recently-added/Rectangle 4300.png"
-                                            alt="I miss you song poster"
-                                            class="poster-lg"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Someone So Far Away
-                                            </p>
-                                            <p class="artist-name mt-[6px]">
-                                                John Doe
-                                            </p>
-                                            <p class="album-name">
-                                                5 song - 20:10 - 12443 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
+                            <!-- -------------- most played ----------------  -->
+                            <aside>
+                                <h3 class="title-3">most played</h3>
+                                <!-- song list  -->
+                                <div class="mt-6 flex flex-col gap-y-4">
+                                    <!-- songs  -->
+                                    <div
+                                        class="song-hover flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
                                             />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/recently-added/Rectangle 4300-1.png"
-                                            alt="I miss you song poster"
-                                            class="poster-lg"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Someone So Far Away
-                                            </p>
-                                            <p class="artist-name">john doe</p>
-                                            <p class="album-name">
-                                                5 song - 20:10 - 12443 plays
-                                            </p>
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
                                         </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
-                                                fill="#E3AA27"
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/who-are-you.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
                                             />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/recently-added/Rectangle 4300-2.png"
-                                            alt="I miss you song poster"
-                                            class="poster-lg"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Someone So Far Away
-                                            </p>
-                                            <p class="artist-name">John Doe</p>
-                                            <p class="album-name">
-                                                5 song - 20:10 - 12443 plays
-                                            </p>
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Who are you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
                                         </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                                    fill="#E3AA27"
+                                                />
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/where-are-we-going.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
                                             />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/recently-added/Rectangle 4300-3.png"
-                                            alt="I miss you song poster"
-                                            class="poster-lg"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Someone So Far Away
-                                            </p>
-                                            <p class="artist-name">John Doe</p>
-                                            <p class="album-name">
-                                                5 song - 20:10 - 12443 plays
-                                            </p>
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Where are we going?
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
                                         </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
-                                                fill="#E3AA27"
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you-2.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
                                             />
-                                        </svg>
-                                    </button>
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                                    fill="#E3AA27"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you-3.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you-4.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </aside>
-                            <aside
-                                class="sm:mt-[6px] mt-6 flex flex-col gap-y-4 justify-center"
+                            <!-- -------------- recently played ----------------- -->
+                            <aside>
+                                <div class="flex justify-between">
+                                    <h3 class="title-3">Recently Played</h3>
+                                    <a class="view-all-btn" href="">view all</a>
+                                </div>
+                                <!-- song list  -->
+                                <div class="mt-6 flex flex-col gap-y-4">
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/who-are-you.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Who are you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/where-are-we-going.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Where are we going?
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you-2.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you-3.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                                    fill="#E3AA27"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you-4.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </section>
+                    <!------------------- recently added  -------------------------->
+                    <section>
+                        <div class="box pt-[48px]">
+                            <!-- -------------- Recently Added ----------------  -->
+                            <div class="mb-6">
+                                <h3 class="title-3">Recently Added</h3>
+                            </div>
+                            <div
+                                class="flex flex-col gap-y-[37px] sm:grid sm:grid-cols-2 sm:gap-x-12 sm:justify-between md:gap-x-20 xl:gap-x-24 xxl:gap-x-[102px]"
                             >
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                <aside class="flex flex-col gap-y-4">
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/recently-added/Rectangle 4300.png"
+                                                alt="I miss you song poster"
+                                                class="poster-lg"
                                             />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/who-are-you.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">Who are you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Someone So Far Away
+                                                </p>
+                                                <p class="artist-name mt-[6px]">
+                                                    John Doe
+                                                </p>
+                                                <p class="album-name">
+                                                    5 song - 20:10 - 12443 plays
+                                                </p>
+                                            </div>
                                         </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/recently-added/Rectangle 4300-1.png"
+                                                alt="I miss you song poster"
+                                                class="poster-lg"
                                             />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/where-are-we-going.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Where are we going?
-                                            </p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Someone So Far Away
+                                                </p>
+                                                <p class="artist-name">
+                                                    john doe
+                                                </p>
+                                                <p class="album-name">
+                                                    5 song - 20:10 - 12443 plays
+                                                </p>
+                                            </div>
                                         </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                                    fill="#E3AA27"
+                                                />
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/recently-added/Rectangle 4300-2.png"
+                                                alt="I miss you song poster"
+                                                class="poster-lg"
                                             />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you-2.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Someone So Far Away
+                                                </p>
+                                                <p class="artist-name">
+                                                    John Doe
+                                                </p>
+                                                <p class="album-name">
+                                                    5 song - 20:10 - 12443 plays
+                                                </p>
+                                            </div>
                                         </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/recently-added/Rectangle 4300-3.png"
+                                                alt="I miss you song poster"
+                                                class="poster-lg"
                                             />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you-3.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Someone So Far Away
+                                                </p>
+                                                <p class="artist-name">
+                                                    John Doe
+                                                </p>
+                                                <p class="album-name">
+                                                    5 song - 20:10 - 12443 plays
+                                                </p>
+                                            </div>
                                         </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                                    fill="#E3AA27"
+                                                />
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
-                                                fill="#E3AA27"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                </aside>
+                                <aside
+                                    class="sm:mt-[6px] mt-6 flex flex-col gap-y-4 justify-center"
                                 >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/song-poster/i-miss-you-4.png"
-                                            alt="I miss you song poster"
-                                            class="poster"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">I Miss you</p>
-                                            <p class="album-name">
-                                                Dieu Tran - 30000 plays
-                                            </p>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
                                         </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/who-are-you.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
                                             />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </aside>
-                        </div>
-                    </div>
-                </section>
-                <!--------------------- top artist  -------------------------->
-                <section>
-                    <div class="box">
-                        <h3 class="title-3">Top Artists</h3>
-                        <!-- artist list  -->
-                        <div
-                            class="flex flex-wrap mt-6 gap-y-[60px] justify-between sm:flex-row sm:justify-start sm:gap-x-[40px] lg:gap-x-[60px]"
-                        >
-                            <!-- artist  -->
-                            <div class="max-w-[160px]">
-                                <img
-                                    src="./img/top-artists/Rectangle 4301.png"
-                                    alt="artist image"
-                                    class="w-40"
-                                />
-                                <p
-                                    class="font-[500] text-base leading-[20px] tracking-[0.01em] text-[#DADADA] mt-[10px]"
-                                >
-                                    Of Monster and Men
-                                </p>
-                                <p class="album-name mt-[6px]">
-                                    5 song - 2 albums - 12443 plays
-                                </p>
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Who are you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/where-are-we-going.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Where are we going?
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you-2.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you-3.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                                    fill="#E3AA27"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/song-poster/i-miss-you-4.png"
+                                                alt="I miss you song poster"
+                                                class="poster"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    I Miss you
+                                                </p>
+                                                <p class="album-name">
+                                                    Dieu Tran - 30000 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </aside>
                             </div>
-                            <!-- artist  -->
-                            <div class="max-w-[160px]">
-                                <img
-                                    src="./img/top-artists/Rectangle 4301-1.png"
-                                    alt="artist image"
-                                    class="w-40"
-                                />
-                                <p
-                                    class="font-[500] text-base leading-[20px] tracking-[0.01em] text-[#DADADA] mt-[10px]"
-                                >
-                                    Of Monster and Men
-                                </p>
-                                <p class="album-name mt-[6px]">
-                                    5 song - 2 albums - 12443 plays
-                                </p>
+                        </div>
+                    </section>
+                    <!--------------------- top artist  -------------------------->
+                    <section>
+                        <div class="box">
+                            <h3 class="title-3">Top Artists</h3>
+                            <!-- artist list  -->
+                            <div
+                                class="flex flex-wrap mt-6 gap-y-[60px] justify-between sm:flex-row sm:justify-start sm:gap-x-[40px] lg:gap-x-[60px]"
+                            >
+                                <!-- artist  -->
+                                <div class="max-w-[160px]">
+                                    <img
+                                        src="./img/top-artists/Rectangle 4301.png"
+                                        alt="artist image"
+                                        class="w-40"
+                                    />
+                                    <p
+                                        class="font-[500] text-base leading-[20px] tracking-[0.01em] text-[#DADADA] mt-[10px]"
+                                    >
+                                        Of Monster and Men
+                                    </p>
+                                    <p class="album-name mt-[6px]">
+                                        5 song - 2 albums - 12443 plays
+                                    </p>
+                                </div>
+                                <!-- artist  -->
+                                <div class="max-w-[160px]">
+                                    <img
+                                        src="./img/top-artists/Rectangle 4301-1.png"
+                                        alt="artist image"
+                                        class="w-40"
+                                    />
+                                    <p
+                                        class="font-[500] text-base leading-[20px] tracking-[0.01em] text-[#DADADA] mt-[10px]"
+                                    >
+                                        Of Monster and Men
+                                    </p>
+                                    <p class="album-name mt-[6px]">
+                                        5 song - 2 albums - 12443 plays
+                                    </p>
+                                </div>
+                                <!-- artist  -->
+                                <div class="max-w-[160px]">
+                                    <img
+                                        src="./img/top-artists/Rectangle 4301-2.png"
+                                        alt="artist image"
+                                        class="w-40"
+                                    />
+                                    <p
+                                        class="font-[500] text-base leading-[20px] tracking-[0.01em] text-[#DADADA] mt-[10px]"
+                                    >
+                                        Of Monster and Men
+                                    </p>
+                                    <p class="album-name mt-[6px]">
+                                        5 song - 2 albums - 12443 plays
+                                    </p>
+                                </div>
                             </div>
-                            <!-- artist  -->
-                            <div class="max-w-[160px]">
-                                <img
-                                    src="./img/top-artists/Rectangle 4301-2.png"
-                                    alt="artist image"
-                                    class="w-40"
-                                />
-                                <p
-                                    class="font-[500] text-base leading-[20px] tracking-[0.01em] text-[#DADADA] mt-[10px]"
-                                >
-                                    Of Monster and Men
-                                </p>
-                                <p class="album-name mt-[6px]">
-                                    5 song - 2 albums - 12443 plays
-                                </p>
+                        </div>
+                    </section>
+                    <!--------------------- top albums  -------------------------->
+                    <section>
+                        <div class="box pt-[48px]">
+                            <!---------------- Top Albums ------------------>
+                            <div class="mb-6">
+                                <h3 class="title-3">Top Albums</h3>
+                            </div>
+                            <div
+                                class="flex flex-col gap-y-4 sm:grid sm:grid-cols-2 sm:gap-x-12 sm:justify-between md:gap-x-20 xl:gap-x-24 xxl:gap-x-[102px]"
+                            >
+                                <!-- album  -->
+                                <aside class="flex flex-col gap-y-4">
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/recently-added/Rectangle 4300.png"
+                                                alt="I miss you song poster"
+                                                class="poster-lg"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Someone So Far Away
+                                                </p>
+                                                <p class="artist-name mt-[6px]">
+                                                    John Doe
+                                                </p>
+                                                <p class="album-name">
+                                                    5 song - 20:10 - 12443 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/recently-added/Rectangle 4300-1.png"
+                                                alt="I miss you song poster"
+                                                class="poster-lg"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Someone So Far Away
+                                                </p>
+                                                <p class="artist-name">
+                                                    john doe
+                                                </p>
+                                                <p class="album-name">
+                                                    5 song - 20:10 - 12443 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                                    fill="#E3AA27"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/recently-added/Rectangle 4300-2.png"
+                                                alt="I miss you song poster"
+                                                class="poster-lg"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Someone So Far Away
+                                                </p>
+                                                <p class="artist-name">
+                                                    John Doe
+                                                </p>
+                                                <p class="album-name">
+                                                    5 song - 20:10 - 12443 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </aside>
+                                <!-- album  -->
+                                <aside class="flex flex-col gap-y-4">
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/recently-added/Rectangle 4300.png"
+                                                alt="I miss you song poster"
+                                                class="poster-lg"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Someone So Far Away
+                                                </p>
+                                                <p class="artist-name mt-[6px]">
+                                                    John Doe
+                                                </p>
+                                                <p class="album-name">
+                                                    5 song - 20:10 - 12443 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/recently-added/Rectangle 4300-1.png"
+                                                alt="I miss you song poster"
+                                                class="poster-lg"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Someone So Far Away
+                                                </p>
+                                                <p class="artist-name">
+                                                    john doe
+                                                </p>
+                                                <p class="album-name">
+                                                    5 song - 20:10 - 12443 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                                    fill="#E3AA27"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- songs  -->
+                                    <div
+                                        class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                    >
+                                        <div class="flex items-center gap-x-4">
+                                            <img
+                                                src="./img/recently-added/Rectangle 4300-2.png"
+                                                alt="I miss you song poster"
+                                                class="poster-lg"
+                                            />
+                                            <div class="">
+                                                <p class="song-name">
+                                                    Someone So Far Away
+                                                </p>
+                                                <p class="artist-name">
+                                                    John Doe
+                                                </p>
+                                                <p class="album-name">
+                                                    5 song - 20:10 - 12443 plays
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- react btn  -->
+                                        <button class="w-[24px] h-[24px]">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                    stroke="#DADADA"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </aside>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!--------------------- top albums  -------------------------->
-                <section>
-                    <div class="box pt-[48px]">
-                        <!---------------- Top Albums ------------------>
-                        <div class="mb-6">
-                            <h3 class="title-3">Top Albums</h3>
-                        </div>
-                        <div
-                            class="flex flex-col gap-y-4 sm:grid sm:grid-cols-2 sm:gap-x-12 sm:justify-between md:gap-x-20 xl:gap-x-24 xxl:gap-x-[102px]"
-                        >
-                            <!-- album  -->
-                            <aside class="flex flex-col gap-y-4">
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/recently-added/Rectangle 4300.png"
-                                            alt="I miss you song poster"
-                                            class="poster-lg"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Someone So Far Away
-                                            </p>
-                                            <p class="artist-name mt-[6px]">
-                                                John Doe
-                                            </p>
-                                            <p class="album-name">
-                                                5 song - 20:10 - 12443 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/recently-added/Rectangle 4300-1.png"
-                                            alt="I miss you song poster"
-                                            class="poster-lg"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Someone So Far Away
-                                            </p>
-                                            <p class="artist-name">john doe</p>
-                                            <p class="album-name">
-                                                5 song - 20:10 - 12443 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
-                                                fill="#E3AA27"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/recently-added/Rectangle 4300-2.png"
-                                            alt="I miss you song poster"
-                                            class="poster-lg"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Someone So Far Away
-                                            </p>
-                                            <p class="artist-name">John Doe</p>
-                                            <p class="album-name">
-                                                5 song - 20:10 - 12443 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </aside>
-                            <!-- album  -->
-                            <aside class="flex flex-col gap-y-4">
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/recently-added/Rectangle 4300.png"
-                                            alt="I miss you song poster"
-                                            class="poster-lg"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Someone So Far Away
-                                            </p>
-                                            <p class="artist-name mt-[6px]">
-                                                John Doe
-                                            </p>
-                                            <p class="album-name">
-                                                5 song - 20:10 - 12443 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/recently-added/Rectangle 4300-1.png"
-                                            alt="I miss you song poster"
-                                            class="poster-lg"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Someone So Far Away
-                                            </p>
-                                            <p class="artist-name">john doe</p>
-                                            <p class="album-name">
-                                                5 song - 20:10 - 12443 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
-                                                fill="#E3AA27"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- songs  -->
-                                <div
-                                    class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                                >
-                                    <div class="flex items-center gap-x-4">
-                                        <img
-                                            src="./img/recently-added/Rectangle 4300-2.png"
-                                            alt="I miss you song poster"
-                                            class="poster-lg"
-                                        />
-                                        <div class="">
-                                            <p class="song-name">
-                                                Someone So Far Away
-                                            </p>
-                                            <p class="artist-name">John Doe</p>
-                                            <p class="album-name">
-                                                5 song - 20:10 - 12443 plays
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- react btn  -->
-                                    <button class="w-[24px] h-[24px]">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                                stroke="#DADADA"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </aside>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </section>
         </div>
         <!------------------ music player  --------------------->

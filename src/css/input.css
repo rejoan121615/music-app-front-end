@@ -15,7 +15,7 @@
         @apply font-normal text-[24px] text-milk leading-[29px] tracking-[0.01em] capitalize;
     }
     .title-16px {
-        @apply font-semibold text-[16px] leading-[20px];
+        @apply font-semibold text-yellow text-[16px] leading-[20px];
     }
 
     /* song component  */
@@ -136,4 +136,12 @@
     /* .song-hover {
         @apply cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk hover:rounded-[8px] transition-all duration-500;
     } */
+
+    /* small top navigation  */
+    .sm-nav-item {
+        @apply title-16px leading-[22px] text-white bg-transparent capitalize py-[5px] px-[16px] rounded-full;
+    }
+    .sm-nav-item.active {
+        @apply text-black bg-yellow;
+    }
 }
