@@ -524,12 +524,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(218 218 218 / var(--tw-text-opacity));
 }
 
+.title-18px {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  --tw-text-opacity: 1;
+  color: rgb(218 218 218 / var(--tw-text-opacity));
+}
+
 .title-16px {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
   --tw-text-opacity: 1;
   color: rgb(227 170 39 / var(--tw-text-opacity));
+}
+
+.title-14px {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+  --tw-text-opacity: 1;
+  color: rgb(218 218 218 / var(--tw-text-opacity));
+}
+
+.para-12px {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+  --tw-text-opacity: 1;
+  color: rgb(179 179 179 / var(--tw-text-opacity));
 }
 
 /* song component  */
@@ -795,6 +823,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .order-2 {
   order: 2;
 }
@@ -852,6 +884,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 10px;
 }
 
+.mt-\[22px\] {
+  margin-top: 22px;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-\[72px\] {
+  margin-top: 72px;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -884,6 +944,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20px;
 }
 
+.h-\[24px\] {
+  height: 24px;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -892,8 +956,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 32px;
 }
 
-.h-\[24px\] {
-  height: 24px;
+.h-screen {
+  height: 100vh;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
 }
 
 .w-full {
@@ -916,6 +984,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20px;
 }
 
+.w-\[24px\] {
+  width: 24px;
+}
+
 .w-3\/6 {
   width: 50%;
 }
@@ -936,12 +1008,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 95px;
 }
 
-.w-\[24px\] {
-  width: 24px;
-}
-
 .w-40 {
   width: 10rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-\[350px\] {
@@ -950,6 +1022,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[160px\] {
   max-width: 160px;
+}
+
+.max-w-\[144px\] {
+  max-width: 144px;
 }
 
 .grow {
@@ -1009,6 +1085,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 1.5rem;
 }
 
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .gap-y-5 {
   row-gap: 1.25rem;
 }
@@ -1022,10 +1102,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 37px;
 }
 
-.gap-y-4 {
-  row-gap: 1rem;
-}
-
 .gap-y-\[60px\] {
   row-gap: 60px;
 }
@@ -1036,6 +1112,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-auto {
   overflow: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded-full {
@@ -1105,6 +1185,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(64 64 64 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#020b16cc\] {
+  background-color: #020b16cc;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -1133,6 +1217,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pl-6 {
   padding-left: 1.5rem;
 }
@@ -1149,6 +1238,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 6rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1159,18 +1256,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-\[48px\] {
   padding-top: 48px;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1196,6 +1281,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
 }
 
 .font-\[500\] {
@@ -1418,6 +1512,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:min-h-screen {
+    min-height: 100vh;
   }
 
   .lg\:w-\[220px\] {

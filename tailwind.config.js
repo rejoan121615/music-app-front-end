@@ -17,6 +17,9 @@ module.exports = {
             fontFamily: {
                 avenir: "avenir",
             },
+            letterSpacing: {
+                regular: "-0.01em"
+            }
         },
     },
     plugins: [],

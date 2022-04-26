@@ -14,11 +14,17 @@
     .title-3 {
         @apply font-normal text-[24px] text-milk leading-[29px] tracking-[0.01em] capitalize;
     }
+    .title-18px {
+        @apply font-[600] text-lg leading-[22px] tracking-regular text-milk;
+    }
     .title-16px {
         @apply font-semibold text-yellow text-[16px] leading-[20px];
     }
     .title-14px {
         @apply text-[14px] leading-[17px] font-[500] -tracking-[0.01em] text-[#DADADA];
+    }
+    .para-12px {
+        @apply text-[12px] font-normal leading-[15px] -tracking-[0.01em] text-milk-dark;
     }
 
     /* song component  */

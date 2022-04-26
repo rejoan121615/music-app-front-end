@@ -907,6 +907,37 @@
                 </div>
             </section>
         </div>
+        <!-- song details screen for small screen  -->
+        <div
+            class="fixed w-screen h-screen top-0 left-0 bg-[#020b16cc] z-50 flex items-center justify-center lg:hidden"
+        >
+            <div class="box h-5/6 w-full overflow-y-auto">
+                <button class=" text-white text-[24px]"><i class="fa-solid fa-arrow-left-long"></i></button>
+
+                <!-- thumbnail  -->
+                <div class="text-center mt-11">
+                    <img
+                        class="w-full max-w-[144px] inline-block"
+                        src="./img/song-poster/song-details-poster.png"
+                        alt="i miss you song thumbnail"
+                    />
+                    <h3 class="title-18px capitalize mt-[22px]">castle</h3>
+                    <p class="para-12px mt-[6px]">Dieu Tran - 30000 plays</p>
+                </div>
+                <!-- list  -->
+                <ul class=" mt-[72px]">
+                    <li class="title-14px capitalize py-3">play</li>
+                    <li class="title-14px capitalize py-3">Favorite</li>
+                    <li class="title-14px capitalize py-3">Go to Album</li>
+                    <li class="title-14px capitalize py-3">Go to Artist</li>
+                    <li class=" flex items-center justify-between py-3">
+                        <p class="title-14px capitalize">Add to</p>
+                        <button class=" text-white text-[24px] h-[20px] "><i class="fa-solid fa-caret-right block"></i></button>
+                    </li>
+                    <li class="title-14px capitalize py-3">Copy Sharable URL</li>
+                </ul>
+            </div>
+        </div>
         <!------------------ music player  --------------------->
         <div
             class="w-full fixed bottom-0 left-0 bg-dark-blue-600 py-[20px] lg:py-[16px]"
