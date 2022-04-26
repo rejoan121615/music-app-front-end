@@ -17,6 +17,9 @@
     .title-16px {
         @apply font-semibold text-yellow text-[16px] leading-[20px];
     }
+    .title-14px {
+        @apply text-[14px] leading-[17px] font-[500] -tracking-[0.01em] text-[#DADADA];
+    }
 
     /* song component  */
     .poster {
@@ -143,5 +146,20 @@
     }
     .sm-nav-item.active {
         @apply text-black bg-yellow;
+    }
+    /* song title and song  */
+    .song,
+    .song-title {
+        @apply grid grid-cols-[1fr_3fr_2.5fr_2fr_1.5fr_0.7fr] py-5;
+    }
+    .song,
+    .song-title {
+        @apply title-14px capitalize;
+    }
+    .song {
+        @apply text-milk items-center;
+    }
+    .song-title {
+        @apply text-[#B3B3B3] font-normal uppercase;
     }
 }
