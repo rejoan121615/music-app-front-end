@@ -23,6 +23,9 @@
     .title-14px {
         @apply text-[14px] leading-[17px] font-[500] -tracking-[0.01em] text-[#DADADA];
     }
+    .para-13px {
+        @apply font-normal text-[13px] leading-[16px] -tracking-regular text-milk;
+    }
     .para-12px {
         @apply text-[12px] font-normal leading-[15px] -tracking-[0.01em] text-milk-dark;
     }

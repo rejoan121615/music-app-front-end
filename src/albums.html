@@ -36,7 +36,7 @@
             <!----------------- left side navigation menu  ----------------->
             <aside
                 id="left-navigation"
-                class="fixed z-40 bg-dark-blue w-full top-[72px] left-[-100%] pl-6 h-full border-r-1 pt-[40px] border-border md:top-[80px] lg:relative lg:top-0 lg:bg-transparent lg:left-0 xl:pt-[50px] lg:block lg:w-[220px] px-0"
+                class="fixed bg-dark-blue w-full top-[72px] left-[-100%] pl-6 h-full border-r-1 pt-[40px] border-border md:top-[80px] lg:relative lg:top-0 lg:bg-transparent lg:left-0 xl:pt-[50px] lg:block lg:w-[220px] px-0"
             >
                 <!-- back button  -->
                 <button class="flex justify-start items-center">
@@ -102,7 +102,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="./current-queue.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./current-queue.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -154,7 +157,7 @@
                             >
                         </li>
                         <!-- nav item  -->
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a
                                 href="./all-songs.html"
                                 class="flex items-center gap-x-4"
@@ -235,8 +238,11 @@
                             >
                         </li>
                         <!-- nav item  -->
-                        <li class="nav-item">
-                            <a href="./albums.html" class="flex items-center gap-x-4">
+                        <li class="nav-item active">
+                            <a
+                                href="./albums.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -297,7 +303,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="./artists.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./artists.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -336,7 +345,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="./favourite.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./favourite.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -389,27 +401,19 @@
                     <h1
                         class="hidden title-1 order-1 w-full text-center lg:w-[initial] lg:block"
                     >
-                        howdy john!
+                        albums
                     </h1>
                     <!-- app title  -->
                     <div class="order-3 lg:hidden">
                         <h2 class="title-16px text-yellow uppercase">music</h2>
                     </div>
-                    <!-- search bar  -->
-                    <div
-                        class="w-9/12 max-w-[350px] h-[45px] items-center order-3 relative hidden lg:flex"
-                    >
-                        <input
-                            type="text"
-                            class="w-full p-3 rounded-full text-[14px] leading-[19px] font-[500] text-white placeholder:text-[rgba(255, 255, 255, 0.5)] bg-transparent outline-none border-1 border-border focus:border-1 focus:border-milk absolute right-0 px-5"
-                            placeholder="Search a song, an album or an artist"
-                        />
+                    <!-- decoration btn  -->
+                    <div class="items-center order-3 relative hidden lg:flex">
                         <button class="w-[20px] h-[20px] absolute right-4">
-                            <img
-                                class="w-full"
-                                src="./img/icons/search-normal.png"
-                                alt="search icon"
-                            />
+                            <i class="fa-solid fa-border-all"></i>
+                        </button>
+                        <button class="w-[20px] h-[20px] absolute right-4">
+                            <i class="fa-solid fa-list-ul"></i>
                         </button>
                     </div>
                     <!-- profile bar  -->
@@ -446,464 +450,153 @@
                             <a class="sm-nav-item" href="#">favourite's</a>
                         </div>
                     </div>
-                    <!-- songs list for desktop screen  -->
-                    <aside class="hidden lg:block">
-                        <!-- title bar  -->
-                        <div class="song-title">
-                            <h3 class="ml-3 hidden lg:block">#</h3>
-                            <h3 class="hidden lg:block">title</h3>
-                            <h3 class="hidden lg:block">artist</h3>
-                            <h3 class="hidden lg:block">album</h3>
-                            <h3 class="hidden lg:block">time</h3>
-                            <h3></h3>
+                    <!-- album lists  -->
+                    <section class=" grid grid-cols-1 gap-y-4 md:grid-cols-2">
+                        <!-- albume list -->
+                        <div class="flex gap-x-4 items-center">
+                            <img
+                                class="w-[88px] h-[88px]"
+                                src="./img/album/album-thumbnail.png"
+                                alt="album thumbnail"
+                            />
+                            <!-- details  -->
+                            <div>
+                                <h3 class="title-16px lg:mt-[16px] text-milk">
+                                    Someone So Far Away
+                                </h3>
+                                <p class="title-14px mt-[6px] font-normal">John Doe</p>
+                                <p class="para-13px mt-[6px] text-milk-dark">
+                                    5 song - 20:10 - 12443 plays
+                                </p>
+                            </div>
                         </div>
-                        <!-- songs  -->
-                        <div class="song bg-[#111e31]">
-                            <h3 class="ml-3">1</h3>
-                            <h3>Kiss you</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <button class="btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                        stroke="#DADADA"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
+                        <!-- albume list -->
+                        <div class="flex gap-x-4 items-center">
+                            <img
+                                class="w-[88px] h-[88px]"
+                                src="./img/album/album-thumbnail.png"
+                                alt="album thumbnail"
+                            />
+                            <!-- details  -->
+                            <div>
+                                <h3 class="title-16px lg:mt-[16px] text-milk">
+                                    Someone So Far Away
+                                </h3>
+                                <p class="title-14px mt-[6px] font-normal">John Doe</p>
+                                <p class="para-13px mt-[6px] text-milk-dark">
+                                    5 song - 20:10 - 12443 plays
+                                </p>
+                            </div>
                         </div>
-                        <!-- songs  -->
-                        <div class="song">
-                            <h3 class="ml-3">2</h3>
-                            <h3>Kiss you</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <button class="btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                        stroke="#DADADA"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
+                        <!-- albume list -->
+                        <div class="flex gap-x-4 items-center">
+                            <img
+                                class="w-[88px] h-[88px]"
+                                src="./img/album/album-thumbnail.png"
+                                alt="album thumbnail"
+                            />
+                            <!-- details  -->
+                            <div>
+                                <h3 class="title-16px lg:mt-[16px] text-milk">
+                                    Someone So Far Away
+                                </h3>
+                                <p class="title-14px mt-[6px] font-normal">John Doe</p>
+                                <p class="para-13px mt-[6px] text-milk-dark">
+                                    5 song - 20:10 - 12443 plays
+                                </p>
+                            </div>
                         </div>
-                        <!-- songs  -->
-                        <div class="song bg-[#111e31]">
-                            <h3 class="ml-3">3</h3>
-                            <h3>Kiss you</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <button class="btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                        stroke="#DADADA"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
+                        <!-- albume list -->
+                        <div class="flex gap-x-4 items-center">
+                            <img
+                                class="w-[88px] h-[88px]"
+                                src="./img/album/album-thumbnail.png"
+                                alt="album thumbnail"
+                            />
+                            <!-- details  -->
+                            <div>
+                                <h3 class="title-16px lg:mt-[16px] text-milk">
+                                    Someone So Far Away
+                                </h3>
+                                <p class="title-14px mt-[6px] font-normal">John Doe</p>
+                                <p class="para-13px mt-[6px] text-milk-dark">
+                                    5 song - 20:10 - 12443 plays
+                                </p>
+                            </div>
                         </div>
-                        <!-- songs  -->
-                        <div class="song">
-                            <h3 class="ml-3">4</h3>
-                            <h3>Kiss you</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <button class="btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                        stroke="#DADADA"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
+                        <!-- albume list -->
+                        <div class="flex gap-x-4 items-center">
+                            <img
+                                class="w-[88px] h-[88px]"
+                                src="./img/album/album-thumbnail.png"
+                                alt="album thumbnail"
+                            />
+                            <!-- details  -->
+                            <div>
+                                <h3 class="title-16px lg:mt-[16px] text-milk">
+                                    Someone So Far Away
+                                </h3>
+                                <p class="title-14px mt-[6px] font-normal">John Doe</p>
+                                <p class="para-13px mt-[6px] text-milk-dark">
+                                    5 song - 20:10 - 12443 plays
+                                </p>
+                            </div>
                         </div>
-                        <!-- songs  -->
-                        <div class="song bg-[#111e31]">
-                            <h3 class="ml-3">5</h3>
-                            <h3>Kiss you</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <button class="btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                        stroke="#DADADA"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
+                        <!-- albume list -->
+                        <div class="flex gap-x-4 items-center">
+                            <img
+                                class="w-[88px] h-[88px]"
+                                src="./img/album/album-thumbnail.png"
+                                alt="album thumbnail"
+                            />
+                            <!-- details  -->
+                            <div>
+                                <h3 class="title-16px lg:mt-[16px] text-milk">
+                                    Someone So Far Away
+                                </h3>
+                                <p class="title-14px mt-[6px] font-normal">John Doe</p>
+                                <p class="para-13px mt-[6px] text-milk-dark">
+                                    5 song - 20:10 - 12443 plays
+                                </p>
+                            </div>
                         </div>
-                    </aside>
-                    <!-- song list for small screen  -->
-                    <aside class="pt-5 lg:hidden">
-                        <!-- song list  -->
-                        <div class="flex flex-col gap-y-4">
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="song-hover flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                            >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">I Miss you</p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                            >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/who-are-you.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">Who are you</p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                            >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/where-are-we-going.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">
-                                            Where are we going?
-                                        </p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                            >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you-2.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">I Miss you</p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                            >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you-3.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">I Miss you</p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                            >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you-4.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">I Miss you</p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
+                        <!-- albume list -->
+                        <div class="flex gap-x-4 items-center">
+                            <img
+                                class="w-[88px] h-[88px]"
+                                src="./img/album/album-thumbnail.png"
+                                alt="album thumbnail"
+                            />
+                            <!-- details  -->
+                            <div>
+                                <h3 class="title-16px lg:mt-[16px] text-milk">
+                                    Someone So Far Away
+                                </h3>
+                                <p class="title-14px mt-[6px] font-normal">John Doe</p>
+                                <p class="para-13px mt-[6px] text-milk-dark">
+                                    5 song - 20:10 - 12443 plays
+                                </p>
+                            </div>
                         </div>
-                    </aside>
+                        <!-- albume list -->
+                        <div class="flex gap-x-4 items-center">
+                            <img
+                                class="w-[88px] h-[88px]"
+                                src="./img/album/album-thumbnail.png"
+                                alt="album thumbnail"
+                            />
+                            <!-- details  -->
+                            <div>
+                                <h3 class="title-16px lg:mt-[16px] text-milk">
+                                    Someone So Far Away
+                                </h3>
+                                <p class="title-14px mt-[6px] font-normal">John Doe</p>
+                                <p class="para-13px mt-[6px] text-milk-dark">
+                                    5 song - 20:10 - 12443 plays
+                                </p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </section>
         </div>
