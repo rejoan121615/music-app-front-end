@@ -997,6 +997,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 72px;
 }
 
+.mr-\[40px\] {
+  margin-right: 40px;
+}
+
+.mr-\[25px\] {
+  margin-right: 25px;
+}
+
 .block {
   display: block;
 }
@@ -1169,6 +1177,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 144px;
 }
 
+.max-w-\[340px\] {
+  max-width: 340px;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -1203,6 +1215,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1259,6 +1275,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-\[60px\] {
   row-gap: 60px;
+}
+
+.gap-x-\[35px\] {
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+
+.gap-x-\[150px\] {
+  -moz-column-gap: 150px;
+       column-gap: 150px;
 }
 
 .self-start {
@@ -1432,6 +1458,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-\[48px\] {
   padding-top: 48px;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-center {
@@ -1641,6 +1671,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:mt-\[6px\] {
     margin-top: 6px;
+  }
+
+  .sm\:mr-\[40px\] {
+    margin-right: 40px;
   }
 
   .sm\:grid {
