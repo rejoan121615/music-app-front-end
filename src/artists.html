@@ -102,7 +102,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="./current-queue.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./current-queue.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -236,7 +239,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="./albums.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./albums.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -297,7 +303,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item active">
-                            <a href="./artists.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./artists.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -336,7 +345,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="./favourite.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./favourite.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -389,28 +401,50 @@
                     <h1
                         class="hidden title-1 order-1 w-full text-center lg:w-[initial] lg:block"
                     >
-                        howdy john!
+                        artists
                     </h1>
                     <!-- app title  -->
                     <div class="order-3 lg:hidden">
                         <h2 class="title-16px text-yellow uppercase">music</h2>
                     </div>
-                    <!-- search bar  -->
-                    <div
-                        class="w-9/12 max-w-[350px] h-[45px] items-center order-3 relative hidden lg:flex"
-                    >
-                        <input
-                            type="text"
-                            class="w-full p-3 rounded-full text-[14px] leading-[19px] font-[500] text-white placeholder:text-[rgba(255, 255, 255, 0.5)] bg-transparent outline-none border-1 border-border focus:border-1 focus:border-milk absolute right-0 px-5"
-                            placeholder="Search a song, an album or an artist"
-                        />
-                        <button class="w-[20px] h-[20px] absolute right-4">
-                            <img
-                                class="w-full"
-                                src="./img/icons/search-normal.png"
-                                alt="search icon"
-                            />
-                        </button>
+                    <!-- decoration btn  -->
+                    <div class="items-center order-3 hidden lg:flex">
+                        <a href="./albums.html">
+                            <button
+                                class="p-[10px] bg-white first:border-1 first:border-white first:border-r-0 first:rounded-tl-md first:rounded-bl-md"
+                            >
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M5.75 10C6.99264 10 8 11.0074 8 12.25V15.75C8 16.9926 6.99264 18 5.75 18H2.25C1.00736 18 0 16.9926 0 15.75V12.25C0 11.0074 1.00736 10 2.25 10H5.75ZM15.75 10C16.9926 10 18 11.0074 18 12.25V15.75C18 16.9926 16.9926 18 15.75 18H12.25C11.0074 18 10 16.9926 10 15.75V12.25C10 11.0074 11.0074 10 12.25 10H15.75ZM5.75 11.5H2.25C1.83579 11.5 1.5 11.8358 1.5 12.25V15.75C1.5 16.1642 1.83579 16.5 2.25 16.5H5.75C6.16421 16.5 6.5 16.1642 6.5 15.75V12.25C6.5 11.8358 6.16421 11.5 5.75 11.5ZM15.75 11.5H12.25C11.8358 11.5 11.5 11.8358 11.5 12.25V15.75C11.5 16.1642 11.8358 16.5 12.25 16.5H15.75C16.1642 16.5 16.5 16.1642 16.5 15.75V12.25C16.5 11.8358 16.1642 11.5 15.75 11.5ZM5.75 0C6.99264 0 8 1.00736 8 2.25V5.75C8 6.99264 6.99264 8 5.75 8H2.25C1.00736 8 0 6.99264 0 5.75V2.25C0 1.00736 1.00736 0 2.25 0H5.75ZM15.75 0C16.9926 0 18 1.00736 18 2.25V5.75C18 6.99264 16.9926 8 15.75 8H12.25C11.0074 8 10 6.99264 10 5.75V2.25C10 1.00736 11.0074 0 12.25 0H15.75ZM5.75 1.5H2.25C1.83579 1.5 1.5 1.83579 1.5 2.25V5.75C1.5 6.16421 1.83579 6.5 2.25 6.5H5.75C6.16421 6.5 6.5 6.16421 6.5 5.75V2.25C6.5 1.83579 6.16421 1.5 5.75 1.5ZM15.75 1.5H12.25C11.8358 1.5 11.5 1.83579 11.5 2.25V5.75C11.5 6.16421 11.8358 6.5 12.25 6.5H15.75C16.1642 6.5 16.5 6.16421 16.5 5.75V2.25C16.5 1.83579 16.1642 1.5 15.75 1.5Z"
+                                        fill="black"
+                                    />
+                                </svg>
+                            </button>
+                        </a>
+                        <a href="./album-details.html">
+                            <button
+                                class="p-[10px] bg-transparent last:border-[#6E6E6E] last:border-2 last:border-l-0 last:rounded-tr-md last:rounded-br-md"
+                            >
+                                <svg
+                                    width="20"
+                                    height="16"
+                                    viewBox="0 0 20 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.24929 13.5C1.93925 13.5 2.49858 14.0593 2.49858 14.7493C2.49858 15.4393 1.93925 15.9986 1.24929 15.9986C0.55933 15.9986 0 15.4393 0 14.7493C0 14.0593 0.55933 13.5 1.24929 13.5ZM4.75 14H19.25C19.6642 14 20 14.3358 20 14.75C20 15.1297 19.7178 15.4435 19.3518 15.4932L19.25 15.5H4.75C4.33579 15.5 4 15.1642 4 14.75C4 14.3703 4.28215 14.0565 4.64823 14.0068L4.75 14H19.25H4.75ZM1.24929 7C1.93925 7 2.49858 7.5593 2.49858 8.2493C2.49858 8.9393 1.93925 9.4986 1.24929 9.4986C0.55933 9.4986 0 8.9393 0 8.2493C0 7.5593 0.55933 7 1.24929 7ZM4.75 7.5H19.25C19.6642 7.5 20 7.8358 20 8.25C20 8.6297 19.7178 8.9435 19.3518 8.9932L19.25 9H4.75C4.33579 9 4 8.6642 4 8.25C4 7.8703 4.28215 7.5565 4.64823 7.5068L4.75 7.5H19.25H4.75ZM1.24929 0.5C1.93925 0.5 2.49858 1.05933 2.49858 1.74929C2.49858 2.43925 1.93925 2.99858 1.24929 2.99858C0.55933 2.99858 0 2.43925 0 1.74929C0 1.05933 0.55933 0.5 1.24929 0.5ZM4.75 1H19.25C19.6642 1 20 1.33579 20 1.75C20 2.1297 19.7178 2.44349 19.3518 2.49315L19.25 2.5H4.75C4.33579 2.5 4 2.16421 4 1.75C4 1.3703 4.28215 1.05651 4.64823 1.00685L4.75 1H19.25H4.75Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </button>
+                        </a>
                     </div>
                     <!-- profile bar  -->
                     <div class="order-4 lg:hidden">
@@ -446,464 +480,77 @@
                             <a class="sm-nav-item" href="#">favourite's</a>
                         </div>
                     </div>
-                    <!-- songs list for desktop screen  -->
-                    <aside class="hidden lg:block">
-                        <!-- title bar  -->
-                        <div class="song-title">
-                            <h3 class="ml-3 hidden lg:block">#</h3>
-                            <h3 class="hidden lg:block">title</h3>
-                            <h3 class="hidden lg:block">artist</h3>
-                            <h3 class="hidden lg:block">album</h3>
-                            <h3 class="hidden lg:block">time</h3>
-                            <h3></h3>
-                        </div>
-                        <!-- songs  -->
-                        <div class="song bg-[#111e31]">
-                            <h3 class="ml-3">1</h3>
-                            <h3>Kiss you</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <button class="btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                        stroke="#DADADA"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                        <!-- songs  -->
-                        <div class="song">
-                            <h3 class="ml-3">2</h3>
-                            <h3>Kiss you</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <button class="btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                        stroke="#DADADA"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                        <!-- songs  -->
-                        <div class="song bg-[#111e31]">
-                            <h3 class="ml-3">3</h3>
-                            <h3>Kiss you</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <button class="btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                        stroke="#DADADA"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                        <!-- songs  -->
-                        <div class="song">
-                            <h3 class="ml-3">4</h3>
-                            <h3>Kiss you</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <button class="btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                        stroke="#DADADA"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                        <!-- songs  -->
-                        <div class="song bg-[#111e31]">
-                            <h3 class="ml-3">5</h3>
-                            <h3>Kiss you</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <h3>Stomyzy</h3>
-                            <button class="btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                                        stroke="#DADADA"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </aside>
-                    <!-- song list for small screen  -->
-                    <aside class="pt-5 lg:hidden">
-                        <!-- song list  -->
-                        <div class="flex flex-col gap-y-4">
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="song-hover flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                    <!-- artists list  -->
+                    <section>
+                        <!-- artist list  -->
+                        <div
+                            class="flex flex-col flex-wrap gap-y-4 justify-between sm:flex-row sm:justify-start sm:gap-x-[60px]  lg:gap-x-[60px]"
+                        >
+                            <!-- artist  -->
+                            <div
+                                class="flex gap-x-4 items-center lg:flex-col lg:max-w-[160px]"
                             >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">I Miss you</p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
+                                <img
+                                    src="./img/top-artists/Rectangle 4301.png"
+                                    alt="artist image"
+                                    class="w-[56px] h-[56px] lg:w-40 lg:h-auto"
+                                />
+                                <!-- content  -->
+                                <div>
+                                    <p
+                                        class="title-14px lg:title-16px lg:text-milk lg:mt-[10px]"
                                     >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                        Of Monster and Men
+                                    </p>
+                                    <p class="para-12px mt-[6px]">
+                                        5 song - 2 albums - 12443 plays
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- artist  -->
+                            <div
+                                class="flex gap-x-4 items-center lg:flex-col lg:max-w-[160px]"
                             >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/who-are-you.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">Who are you</p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
+                                <img
+                                    src="./img/top-artists/Rectangle 4301-1.png"
+                                    alt="artist image"
+                                    class="w-[56px] h-[56px] lg:w-40 lg:h-auto"
+                                />
+                                <!-- content  -->
+                                <div>
+                                    <p
+                                        class="title-14px lg:title-16px lg:text-milk lg:mt-[10px]"
                                     >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                                        Of Monster and Men
+                                    </p>
+                                    <p class="para-12px mt-[6px]">
+                                        5 song - 2 albums - 12443 plays
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- artist  -->
+                            <div
+                                class="flex gap-x-4 items-center lg:flex-col lg:max-w-[160px]"
                             >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/where-are-we-going.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">
-                                            Where are we going?
-                                        </p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
+                                <img
+                                    src="./img/top-artists/Rectangle 4301-2.png"
+                                    alt="artist image"
+                                    class="w-[56px] h-[56px] lg:w-40 lg:h-auto"
+                                />
+                                <!-- content  -->
+                                <div>
+                                    <p
+                                        class="title-14px lg:title-16px lg:text-milk lg:mt-[10px]"
                                     >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                            >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you-2.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">I Miss you</p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
+                                        Of Monster and Men
+                                    </p>
+                                    <p class="para-12px mt-[6px]">
+                                        5 song - 2 albums - 12443 plays
+                                    </p>
                                 </div>
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                            >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you-3.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">I Miss you</p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
-                            <!-- songs  -->
-                            <a href="./song.html"
-                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
-                            >
-                                <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you-4.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
-                                    <div class="">
-                                        <p class="song-name">I Miss you</p>
-                                        <p class="album-name">
-                                            Dieu Tran - 30000 plays
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- react btn  -->
-                                <button
-                                    class="w-[24px] h-[24px] self-start flex justify-center"
-                                >
-                                    <svg
-                                        width="4"
-                                        height="18"
-                                        viewBox="0 0 4 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="2"
-                                            cy="16"
-                                            r="2"
-                                            transform="rotate(-90 2 16)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="9"
-                                            r="2"
-                                            transform="rotate(-90 2 9)"
-                                            fill="#B3B3B3"
-                                        />
-                                        <circle
-                                            cx="2"
-                                            cy="2"
-                                            r="2"
-                                            transform="rotate(-90 2 2)"
-                                            fill="#B3B3B3"
-                                        />
-                                    </svg>
-                                </button>
-                            </a>
+                            </div>
                         </div>
-                    </aside>
+                    </section>
                 </div>
             </section>
         </div>
