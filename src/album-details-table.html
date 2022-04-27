@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- google fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+            integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- css style  -->
+        <link rel="stylesheet" href="./css/output.css" />
+    </head>
+    <body class="bg-dark-blue-900">
+        <!----------------- main wrapper / root ------------------>
+        <div
+            class="lg:grid lg:grid-cols-[220px_1fr] lg:pl-[50px] xl:pl-[65px] lg:min-h-screen"
+        >
+            <!----------------- left side navigation menu  ----------------->
+            <aside
+                id="left-navigation"
+                class="fixed z-40 bg-dark-blue w-full top-[72px] left-[-100%] pl-6 h-full border-r-1 pt-[40px] border-border md:top-[80px] lg:relative lg:top-0 lg:bg-transparent lg:left-0 xl:pt-[50px] lg:block lg:w-[220px] px-0"
+            >
+                <!-- back button  -->
+                <button class="flex justify-start items-center">
+                    <svg
+                        class="w-6 mr-3"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            d="M9.57 5.93 3.5 12l6.07 6.07M20.5 12H3.67"
+                            stroke="#fff"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                    <p class="para-sm text-white mt-0 capitalize">go back</p>
+                </button>
+                <p
+                    class="para-sm text-[11px] leading-[15px] tracking-[0.18em] text-milk-dark uppercase mt-6"
+                >
+                    your library
+                </p>
+                <!-- navbar  -->
+                <nav>
+                    <ul class="pt-[24px]">
+                        <!-- nav item  -->
+                        <li class="nav-item">
+                            <a
+                                href="./index.html"
+                                class="flex items-center gap-x-4"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M9.02 2.83998L3.63 7.03998C2.73 7.73998 2 9.22998 2 10.36V17.77C2 20.09 3.89 21.99 6.21 21.99H17.79C20.11 21.99 22 20.09 22 17.78V10.5C22 9.28998 21.19 7.73998 20.2 7.04998L14.02 2.71998C12.62 1.73998 10.37 1.78998 9.02 2.83998Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M12 17.99V14.99"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <p
+                                    class="text-[16px] leading-[20px] text-milk capitalize"
+                                >
+                                    home
+                                </p></a
+                            >
+                        </li>
+                        <!-- nav item  -->
+                        <li class="nav-item">
+                            <a
+                                href="./current-queue.html"
+                                class="flex items-center gap-x-4"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M3 8.25V15.75"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M7.5 5.75V18.25"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M12 3.25V20.75"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M16.5 5.75V18.25"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M21 8.25V15.75"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <p
+                                    class="text-[16px] leading-[20px] text-milk capitalize"
+                                >
+                                    Current Queue
+                                </p></a
+                            >
+                        </li>
+                        <!-- nav item  -->
+                        <li class="nav-item">
+                            <a
+                                href="./all-songs.html"
+                                class="flex items-center gap-x-4"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2 3H22"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-miterlimit="10"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M2 9H11"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-miterlimit="10"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M2 15H8"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-miterlimit="10"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M2 21H6"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-miterlimit="10"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M11.84 22C13.044 22 14.02 21.024 14.02 19.82C14.02 18.616 13.044 17.64 11.84 17.64C10.636 17.64 9.65997 18.616 9.65997 19.82C9.65997 21.024 10.636 22 11.84 22Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M22 18.37V9.85999C22 8.04999 20.86 7.79999 19.71 8.10999L15.36 9.3C14.57 9.52 14.02 10.14 14.02 11.05V12.57V13.59V19.82"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M19.82 20.55C21.0239 20.55 22 19.574 22 18.37C22 17.166 21.0239 16.19 19.82 16.19C18.616 16.19 17.64 17.166 17.64 18.37C17.64 19.574 18.616 20.55 19.82 20.55Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M14.02 13.6L22 11.42"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <p
+                                    class="text-[16px] leading-[20px] text-milk capitalize"
+                                >
+                                    all songs
+                                </p></a
+                            >
+                        </li>
+                        <!-- nav item  -->
+                        <li class="nav-item">
+                            <a
+                                href="./albums.html"
+                                class="flex items-center gap-x-4"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M7 2.5V21.5"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M11.47 16.8C12.2929 16.8 12.96 16.1329 12.96 15.31C12.96 14.4871 12.2929 13.82 11.47 13.82C10.6471 13.82 9.97998 14.4871 9.97998 15.31C9.97998 16.1329 10.6471 16.8 11.47 16.8Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M18.43 14.31V8.47996C18.43 7.23996 17.65 7.07 16.86 7.28L13.88 8.09C13.34 8.24 12.96 8.66995 12.96 9.28995V10.33V11.03V15.3"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M16.93 15.8C17.7529 15.8 18.42 15.1329 18.42 14.31C18.42 13.4871 17.7529 12.82 16.93 12.82C16.1071 12.82 15.44 13.4871 15.44 14.31C15.44 15.1329 16.1071 15.8 16.93 15.8Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M12.96 11.04L18.43 9.54999"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                                <p
+                                    class="text-[16px] leading-[20px] text-milk capitalize"
+                                >
+                                    albums
+                                </p></a
+                            >
+                        </li>
+                        <!-- nav item  -->
+                        <li class="nav-item">
+                            <a
+                                href="./artists.html"
+                                class="flex items-center gap-x-4"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M18.14 21.62C17.26 21.88 16.22 22 15 22H8.99998C7.77998 22 6.73999 21.88 5.85999 21.62C6.07999 19.02 8.74998 16.97 12 16.97C15.25 16.97 17.92 19.02 18.14 21.62Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M15 2H9C4 2 2 4 2 9V15C2 18.78 3.14 20.85 5.86 21.62C6.08 19.02 8.75 16.97 12 16.97C15.25 16.97 17.92 19.02 18.14 21.62C20.86 20.85 22 18.78 22 15V9C22 4 20 2 15 2ZM12 14.17C10.02 14.17 8.42 12.56 8.42 10.58C8.42 8.60002 10.02 7 12 7C13.98 7 15.58 8.60002 15.58 10.58C15.58 12.56 13.98 14.17 12 14.17Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M15.58 10.58C15.58 12.56 13.98 14.17 12 14.17C10.02 14.17 8.41998 12.56 8.41998 10.58C8.41998 8.60002 10.02 7 12 7C13.98 7 15.58 8.60002 15.58 10.58Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <p
+                                    class="text-[16px] leading-[20px] text-milk capitalize"
+                                >
+                                    artists
+                                </p></a
+                            >
+                        </li>
+                        <!-- nav item  -->
+                        <li class="nav-item">
+                            <a
+                                href="./favourite.html"
+                                class="flex items-center gap-x-4"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                                <p
+                                    class="text-[16px] leading-[20px] text-milk capitalize"
+                                >
+                                    Favorites
+                                </p></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <!------------------ right side contents  ------------------->
+            <section class="right__content pb-24 lg:pb-[20px] xl:pb-2">
+                <!----------------- top header ------------ -->
+                <header
+                    class="fixed left-0 top-0 w-full bg-dark-blue border-b-1 border-border box flex flex-wrap gap-y-6 items-center justify-between md:flex-row md:justify-between lg:items-center lg:justify-between lg:relative lg:left-0 lg:top-0"
+                >
+                    <!-- hamberger menu  -->
+                    <div
+                        class="hambur-container w-8 h-8 relative order-2 lg:hidden"
+                    >
+                        <input
+                            class="checkbox"
+                            type="checkbox"
+                            name=""
+                            id="menu-btn"
+                        />
+                        <div class="hamburger-lines">
+                            <span class="line line1 bg-milk"></span>
+                            <span class="line line2 bg-milk"></span>
+                            <span class="line line3 bg-milk"></span>
+                        </div>
+                    </div>
+                    <!-- title  -->
+                    <div class="hidden lg:flex lg:gap-x-6 lg:items-center ">
+                        <img
+                            src="./img/recently-added/Rectangle 4300-3.png"
+                            alt="album thumbnail"
+                        />
+                        <div>
+                            <h1 class="title-1 order-1 w-full lg:w-[initial] ">Hello</h1>
+                            <p class=" para-13px text-milk-dark mt-[6px]">by <span class=" capitalize font-[500] text-[14px] text-milk">beckham</span> - 34 songs - 02:12:34</p>
+                        </div>
+                    </div>
+
+                    <!-- app title  -->
+                    <div class="order-3 lg:hidden">
+                        <h2 class="title-16px text-yellow uppercase">music</h2>
+                    </div>
+                    <!-- search bar  -->
+                    <button
+                        class="view-all-btn hidden lg:flex"
+                    >
+                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 12.8208C1 12.8208 4.21429 12.8208 8.07143 7.99941C11.9286 3.17798 15.1429 3.17798 15.1429 3.17798" stroke="white"/>
+                          <path d="M1 3.17819C1 3.17819 3.1557 3.17819 6.05479 5.82627M15.1429 12.821C15.1429 12.821 12.9434 12.821 10 10.0919" stroke="white"/>
+                          <path d="M19 3.17834L15.1429 5.40526L15.1429 0.951416L19 3.17834Z" fill="white"/>
+                          <path d="M19 12.8217L15.1429 10.5947L15.1429 15.0486L19 12.8217Z" fill="white"/>
+                        </svg>
+                        <h3 class=" text-white title-14px ml-2">all</h3>
+                    </button>
+                    <!-- profile bar  -->
+                    <div class="order-4 lg:hidden">
+                        <!-- search btn  -->
+                        <button class="w-[20px] mr-[24px]">
+                            <img
+                                class="w-full"
+                                src="./img/icons/search-sm.svg"
+                                alt="search icon"
+                            />
+                        </button>
+                        <!-- profile button  -->
+                        <button class="w-[20px]">
+                            <img
+                                class="w-full"
+                                src="./img/icons/user-small.svg"
+                                alt="user small icon"
+                            />
+                        </button>
+                    </div>
+                </header>
+                <!-- content wrap  -->
+                <div class="box mt-[73px] sm:mt-[80px] lg:mt-0 lg:pt-[37px]">
+                    <!-- quick navigation menu  -->
+                    <div class="box overflow-auto p-0 pb-5 lg:hidden">
+                        <div class="flex flex-nowrap flex-row">
+                            <a class="sm-nav-item active" href="./index.html"
+                                >home</a
+                            >
+                            <a class="sm-nav-item" href="#">songs</a>
+                            <a class="sm-nav-item" href="#">album</a>
+                            <a class="sm-nav-item" href="#">artists</a>
+                            <a class="sm-nav-item" href="#">favourite's</a>
+                        </div>
+                    </div>
+                    <!-- album songs list for desktop screen  -->
+                    <aside class="hidden lg:block">
+                        <!-- album title  -->
+                        <div class="album-title">
+                            <h3 class="ml-3 hidden lg:block">#</h3>
+                            <h3 class="hidden lg:block">title</h3>
+                            <h3 class="hidden lg:block">time</h3>
+                            <h3></h3>
+                        </div>
+                        <!-- album song  -->
+                        <div class="album-song bg-[#111e31]">
+                            <h3 class="ml-3">1</h3>
+                            <h3>Kiss you</h3>
+                            <h3>3.05</h3>
+                            <button class="btn">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- album song  -->
+                        <div class="album-song">
+                            <h3 class="ml-3">2</h3>
+                            <h3>Kiss you</h3>
+                            <h3>3.05</h3>
+                            <button class="btn">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- album song  -->
+                        <div class="album-song bg-[#111e31]">
+                            <h3 class="ml-3">3</h3>
+                            <h3>Kiss you</h3>
+                            <h3>3.05</h3>
+                            <button class="btn">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- album song  -->
+                        <div class="album-song">
+                            <h3 class="ml-3">4</h3>
+                            <h3>Kiss you</h3>
+                            <h3>3.05</h3>
+                            <button class="btn">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- album song  -->
+                        <div class="album-song bg-[#111e31]">
+                            <h3 class="ml-3">5</h3>
+                            <h3>Kiss you</h3>
+                            <h3>3.05</h3>
+                            <button class="btn">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- album song  -->
+                        <div class="album-song">
+                            <h3 class="ml-3">6</h3>
+                            <h3>Kiss you</h3>
+                            <h3>3.05</h3>
+                            <button class="btn">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                        stroke="#DADADA"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </aside>
+                    <!-- album for small screen  -->
+                    <aside class="pt-5 lg:hidden">
+                      <!-- album highlight  -->
+                      <div>
+                        <!-- top bar  -->
+                        <div class=" flex items-start justify-between ">
+                          <!-- left back btn  -->
+                          <button>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.57 5.92999L3.5 12L9.57 18.07" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.5 12H3.66998" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                          <!-- center poster  -->
+                          <div class=" w-full max-w-[250px] "><img class=" w-full" src="./img/album/poster-lg.png" alt="album thumbnail poster"></div>
+                          <!-- right option btn  -->
+                          <button>
+                            <svg width="18" height="4" viewBox="0 0 18 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="white"/>
+                            <circle cx="9" cy="2" r="2" fill="white"/>
+                            <circle cx="16" cy="2" r="2" fill="white"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                        <!-- album song list  -->
+                        <div class="flex flex-col gap-y-4">
+                            <!-- songs  -->
+                            <a
+                                href="./song.html"
+                                class="song-hover flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                            >
+                                <div class="flex items-center gap-x-4">
+                                    <img
+                                        src="./img/song-poster/i-miss-you.png"
+                                        alt="I miss you song poster"
+                                        class="poster"
+                                    />
+                                    <div class="">
+                                        <p class="song-name">I Miss you</p>
+                                        <p class="album-name">
+                                            Dieu Tran - 30000 plays
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- react btn  -->
+                                <button
+                                    class="w-[24px] h-[24px] self-start flex justify-center"
+                                >
+                                    <svg
+                                        width="4"
+                                        height="18"
+                                        viewBox="0 0 4 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <circle
+                                            cx="2"
+                                            cy="16"
+                                            r="2"
+                                            transform="rotate(-90 2 16)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="9"
+                                            r="2"
+                                            transform="rotate(-90 2 9)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="2"
+                                            r="2"
+                                            transform="rotate(-90 2 2)"
+                                            fill="#B3B3B3"
+                                        />
+                                    </svg>
+                                </button>
+                            </a>
+                            <!-- songs  -->
+                            <a
+                                href="./song.html"
+                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                            >
+                                <div class="flex items-center gap-x-4">
+                                    <img
+                                        src="./img/song-poster/who-are-you.png"
+                                        alt="I miss you song poster"
+                                        class="poster"
+                                    />
+                                    <div class="">
+                                        <p class="song-name">Who are you</p>
+                                        <p class="album-name">
+                                            Dieu Tran - 30000 plays
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- react btn  -->
+                                <button
+                                    class="w-[24px] h-[24px] self-start flex justify-center"
+                                >
+                                    <svg
+                                        width="4"
+                                        height="18"
+                                        viewBox="0 0 4 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <circle
+                                            cx="2"
+                                            cy="16"
+                                            r="2"
+                                            transform="rotate(-90 2 16)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="9"
+                                            r="2"
+                                            transform="rotate(-90 2 9)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="2"
+                                            r="2"
+                                            transform="rotate(-90 2 2)"
+                                            fill="#B3B3B3"
+                                        />
+                                    </svg>
+                                </button>
+                            </a>
+                            <!-- songs  -->
+                            <a
+                                href="./song.html"
+                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                            >
+                                <div class="flex items-center gap-x-4">
+                                    <img
+                                        src="./img/song-poster/where-are-we-going.png"
+                                        alt="I miss you song poster"
+                                        class="poster"
+                                    />
+                                    <div class="">
+                                        <p class="song-name">
+                                            Where are we going?
+                                        </p>
+                                        <p class="album-name">
+                                            Dieu Tran - 30000 plays
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- react btn  -->
+                                <button
+                                    class="w-[24px] h-[24px] self-start flex justify-center"
+                                >
+                                    <svg
+                                        width="4"
+                                        height="18"
+                                        viewBox="0 0 4 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <circle
+                                            cx="2"
+                                            cy="16"
+                                            r="2"
+                                            transform="rotate(-90 2 16)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="9"
+                                            r="2"
+                                            transform="rotate(-90 2 9)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="2"
+                                            r="2"
+                                            transform="rotate(-90 2 2)"
+                                            fill="#B3B3B3"
+                                        />
+                                    </svg>
+                                </button>
+                            </a>                   
+                            <!-- songs  -->
+                            <a
+                                href="./song.html"
+                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                            >
+                                <div class="flex items-center gap-x-4">
+                                    <img
+                                        src="./img/song-poster/i-miss-you-2.png"
+                                        alt="I miss you song poster"
+                                        class="poster"
+                                    />
+                                    <div class="">
+                                        <p class="song-name">I Miss you</p>
+                                        <p class="album-name">
+                                            Dieu Tran - 30000 plays
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- react btn  -->
+                                <button
+                                    class="w-[24px] h-[24px] self-start flex justify-center"
+                                >
+                                    <svg
+                                        width="4"
+                                        height="18"
+                                        viewBox="0 0 4 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <circle
+                                            cx="2"
+                                            cy="16"
+                                            r="2"
+                                            transform="rotate(-90 2 16)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="9"
+                                            r="2"
+                                            transform="rotate(-90 2 9)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="2"
+                                            r="2"
+                                            transform="rotate(-90 2 2)"
+                                            fill="#B3B3B3"
+                                        />
+                                    </svg>
+                                </button>
+                            </a>
+                            <!-- songs  -->
+                            <a
+                                href="./song.html"
+                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                            >
+                                <div class="flex items-center gap-x-4">
+                                    <img
+                                        src="./img/song-poster/i-miss-you-3.png"
+                                        alt="I miss you song poster"
+                                        class="poster"
+                                    />
+                                    <div class="">
+                                        <p class="song-name">I Miss you</p>
+                                        <p class="album-name">
+                                            Dieu Tran - 30000 plays
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- react btn  -->
+                                <button
+                                    class="w-[24px] h-[24px] self-start flex justify-center"
+                                >
+                                    <svg
+                                        width="4"
+                                        height="18"
+                                        viewBox="0 0 4 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <circle
+                                            cx="2"
+                                            cy="16"
+                                            r="2"
+                                            transform="rotate(-90 2 16)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="9"
+                                            r="2"
+                                            transform="rotate(-90 2 9)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="2"
+                                            r="2"
+                                            transform="rotate(-90 2 2)"
+                                            fill="#B3B3B3"
+                                        />
+                                    </svg>
+                                </button>
+                            </a>
+                            <!-- songs  -->
+                            <a
+                                href="./song.html"
+                                class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
+                            >
+                                <div class="flex items-center gap-x-4">
+                                    <img
+                                        src="./img/song-poster/i-miss-you-4.png"
+                                        alt="I miss you song poster"
+                                        class="poster"
+                                    />
+                                    <div class="">
+                                        <p class="song-name">I Miss you</p>
+                                        <p class="album-name">
+                                            Dieu Tran - 30000 plays
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- react btn  -->
+                                <button
+                                    class="w-[24px] h-[24px] self-start flex justify-center"
+                                >
+                                    <svg
+                                        width="4"
+                                        height="18"
+                                        viewBox="0 0 4 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <circle
+                                            cx="2"
+                                            cy="16"
+                                            r="2"
+                                            transform="rotate(-90 2 16)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="9"
+                                            r="2"
+                                            transform="rotate(-90 2 9)"
+                                            fill="#B3B3B3"
+                                        />
+                                        <circle
+                                            cx="2"
+                                            cy="2"
+                                            r="2"
+                                            transform="rotate(-90 2 2)"
+                                            fill="#B3B3B3"
+                                        />
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </div>
+        <!------------------ music player  --------------------->
+        <div
+            class="w-full fixed bottom-0 left-0 bg-dark-blue-600 py-[20px] lg:py-[16px]"
+        >
+            <div
+                class="container px-3 mx-auto grid grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-x-8 md:gap-x-14 lg:grid-cols-[250px_250px_220px_220px] lg:justify-between lg:gap-0 xl:grid-cols-[320px_320px_225px_225px]"
+            >
+                <!-- music details   -->
+                <div
+                    class="flex items-center gap-x-4 lg:w-[250px] xl:w-[320px]"
+                >
+                    <img
+                        src="./img/song-poster/i-miss-you.png"
+                        alt="I miss you song poster"
+                        class="poster"
+                    />
+                    <div class="">
+                        <p class="song-name">I Miss you</p>
+                        <p class="album-name">Dieu Tran - 30000 plays</p>
+                    </div>
+                </div>
+                <!-- music player  -->
+                <div
+                    class="flex items-center justify-between gap-x-2 lg:w-[250px] xl:w-[320px] xl:justify-self-center"
+                >
+                    <p class="text-[12px] text-[#AEAEAE]">0.59</p>
+                    <div class="h-1 relative grow">
+                        <div
+                            class="absolute left-0 top-0 h-1 bg-yellow rounded-[4px] w-3/6 z-10"
+                        ></div>
+                        <div
+                            class="absolute left-0 top-0 w-full h-1 bg-[#404040] rounded-[4px]"
+                        ></div>
+                    </div>
+                    <p class="text-[12px] text-[#AEAEAE]">2.36</p>
+                </div>
+                <!-- music control  -->
+                <div
+                    class="flex justify-between lg:items-center md:w-[300px] lg:w-[220px] lg:justify-self-center"
+                >
+                    <button class="w-[14px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/shuffle_icon.png"
+                            alt="shuffle icon"
+                        />
+                    </button>
+                    <button class="w-[14px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/previous_icon.png"
+                            alt="previous icon"
+                        />
+                    </button>
+                    <button class="w-[32px] h-[32px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/pause_icon.png"
+                            alt="pause icon"
+                        />
+                    </button>
+                    <button class="w-[14px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/next_icon.png"
+                            alt="next icon"
+                        />
+                    </button>
+                    <button class="w-[14px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/repeat_icon.png"
+                            alt="repeat icon"
+                        />
+                    </button>
+                </div>
+                <!-- others control  -->
+                <div
+                    class="flex justify-between md:w-[300px] md:justify-self-end lg:w-[220px] lg:justify-self-auto xl:justify-self-end"
+                >
+                    <button class="w-[16px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/queue.png"
+                            alt="queue icon"
+                        />
+                    </button>
+                    <button class="w-[16px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/devices.png"
+                            alt="device icon"
+                        />
+                    </button>
+                    <button class="w-[95px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/volume.png"
+                            alt="volume icon"
+                        />
+                    </button>
+                    <button class="w-[16px]">
+                        <img
+                            class="w-full"
+                            src="./img/icons/expand.png"
+                            alt="expand icon"
+                        />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- js file  -->
+        <script src="./js/script.js"></script>
+    </body>
+</html>

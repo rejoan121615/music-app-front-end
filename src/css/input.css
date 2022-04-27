@@ -171,4 +171,16 @@
     .song-title {
         @apply text-[#B3B3B3] font-normal uppercase;
     }
+
+    /* music album details  */
+    .album-title,
+    .album-song {
+        @apply grid grid-cols-[1fr_6fr_1fr_75px] py-5 title-14px capitalize;
+    }
+    .album-song {
+        @apply text-milk items-center;
+    }
+    .album-title {
+        @apply text-[#B3B3B3] font-normal uppercase;
+    }
 }
