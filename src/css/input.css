@@ -14,6 +14,9 @@
     .title-3 {
         @apply font-normal text-[24px] text-milk leading-[29px] tracking-[0.01em] capitalize;
     }
+    .title-20px {
+        @apply font-semibold text-[20px] text-milk leading-[24px] tracking-[0.01em] capitalize;
+    }
     .title-18px {
         @apply font-[600] text-lg leading-[22px] tracking-regular text-milk;
     }
