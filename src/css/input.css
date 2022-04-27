@@ -186,4 +186,15 @@
     .album-title {
         @apply text-[#B3B3B3] font-normal uppercase;
     }
+    /* artist album details  */
+    .art-album-title,
+    .art-album-song {
+        @apply grid grid-cols-[1fr_7fr_3fr_2fr_1fr] py-5 title-14px capitalize;
+    }
+    .art-album-song {
+        @apply text-milk items-center;
+    }
+    .art-album-title {
+        @apply text-[#B3B3B3] font-normal uppercase;
+    }
 }

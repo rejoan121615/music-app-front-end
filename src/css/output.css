@@ -827,6 +827,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(179 179 179 / var(--tw-text-opacity));
 }
 
+/* artist album details  */
+
+.art-album-title, .art-album-song {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+  --tw-text-opacity: 1;
+  color: rgb(218 218 218 / var(--tw-text-opacity));
+  display: grid;
+  grid-template-columns: 1fr 7fr 3fr 2fr 1fr;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-transform: capitalize;
+}
+
+.art-album-song {
+  align-items: center;
+  --tw-text-opacity: 1;
+  color: rgb(218 218 218 / var(--tw-text-opacity));
+}
+
+.art-album-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(179 179 179 / var(--tw-text-opacity));
+}
+
 .fixed {
   position: fixed;
 }
@@ -1024,6 +1053,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20px;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-\[140px\] {
   height: 140px;
 }
@@ -1088,12 +1121,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 75%;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .w-4\/6 {
   width: 66.666667%;
 }
 
-.w-\[560px\] {
-  width: 560px;
+.w-\[540px\] {
+  width: 540px;
 }
 
 .w-\[140px\] {
@@ -1110,10 +1147,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[540px\] {
-  width: 540px;
 }
 
 .max-w-\[250px\] {
@@ -1208,6 +1241,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.gap-x-\[10px\] {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 .gap-y-\[37px\] {
@@ -1371,6 +1414,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1.25rem;
 }
 
+.pb-\[16px\] {
+  padding-bottom: 16px;
+}
+
+.pt-\[10px\] {
+  padding-top: 10px;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1381,14 +1432,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-\[48px\] {
   padding-top: 48px;
-}
-
-.pb-\[16px\] {
-  padding-bottom: 16px;
-}
-
-.pt-\[10px\] {
-  padding-top: 10px;
 }
 
 .text-center {
