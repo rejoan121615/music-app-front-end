@@ -1643,22 +1643,22 @@
             class="w-full fixed bottom-0 left-0 bg-dark-blue-600 py-[20px] lg:py-[16px]"
         >
             <div
-                class="container px-3 mx-auto grid grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-x-8 md:gap-x-14 lg:grid-cols-[250px_250px_220px_220px] lg:justify-between lg:gap-0 xl:grid-cols-[320px_320px_225px_225px]"
+                class="container px-3 mx-auto grid grid-cols-1 gap-y-5 md:gap-x-14 lg:grid-cols-[230px_250px_220px_220px] lg:justify-between lg:gap-0 xl:grid-cols-[350px_320px_225px_225px]"
             >
                 <!-- music details and control    -->
-                <div class=" flex  justify-between">
+                <div class="flex justify-between">
                     <!-- music details container  -->
                     <div
-                        class="flex items-center gap-x-[10px] lg:w-[250px] xl:w-[320px]"
+                        class="flex items-center gap-x-[10px] lg:gap-x-[16px]"
                     >
                         <img
                             src="./img/song-poster/i-miss-you.png"
                             alt="I miss you song poster"
-                            class="w-8 h-8"
+                            class="w-8 h-8 lg:w-[56px] lg:h-[56px]"
                         />
                         <div class="">
                             <p
-                                class="text-[10px] text-white font-semibold tracking-wider md:text-[13px]  lg:text-[15px] "
+                                class="text-[10px] text-white font-semibold tracking-wider md:text-[13px] lg:text-[15px]"
                             >
                                 Boyfriend (with Social House)
                             </p>
@@ -1670,7 +1670,7 @@
                         </div>
                     </div>
                     <!-- music controls  -->
-                    <div class="flex gap-x-6 items-start">
+                    <div class="flex gap-x-6 items-start lg:hidden">
                         <button>
                             <svg
                                 width="14"
@@ -1723,9 +1723,20 @@
                             </svg>
                         </button>
                         <button>
-                            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="3" height="12" fill="white"/>
-                                <rect x="7" width="3" height="12" fill="white"/>
+                            <svg
+                                width="10"
+                                height="12"
+                                viewBox="0 0 10 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect width="3" height="12" fill="white" />
+                                <rect
+                                    x="7"
+                                    width="3"
+                                    height="12"
+                                    fill="white"
+                                />
                             </svg>
                         </button>
                     </div>
@@ -1734,6 +1745,9 @@
                 <div
                     class="flex items-center justify-between gap-x-2 lg:w-[250px] xl:w-[320px] xl:justify-self-center"
                 >
+                    <p class="text-[12px] text-[#AEAEAE] hidden lg:block">
+                        0.59
+                    </p>
                     <div class="h-1 relative grow">
                         <div
                             class="absolute left-0 top-0 h-1 bg-yellow rounded-[4px] w-3/6 z-10"
@@ -1742,48 +1756,13 @@
                             class="absolute left-0 top-0 w-full h-1 bg-[#404040] rounded-[4px]"
                         ></div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!------------------ music player  --------------------->
-        <div
-            class=" hidden w-full fixed bottom-0 left-0 bg-dark-blue-600 py-[20px] lg:py-[16px]"
-        >
-            <div
-                class="container px-3 mx-auto grid grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-x-8 md:gap-x-14 lg:grid-cols-[250px_250px_220px_220px] lg:justify-between lg:gap-0 xl:grid-cols-[320px_320px_225px_225px]"
-            >
-                <!-- music details   -->
-                <div
-                    class="flex items-center gap-x-4 lg:w-[250px] xl:w-[320px]"
-                >
-                    <img
-                        src="./img/song-poster/i-miss-you.png"
-                        alt="I miss you song poster"
-                        class="poster"
-                    />
-                    <div class="">
-                        <p class="song-name">I Miss you</p>
-                        <p class="album-name">Dieu Tran - 30000 plays</p>
-                    </div>
-                </div>
-                <!-- music player  -->
-                <div
-                    class="flex items-center justify-between gap-x-2 lg:w-[250px] xl:w-[320px] xl:justify-self-center"
-                >
-                    <p class="text-[12px] text-[#AEAEAE]">0.59</p>
-                    <div class="h-1 relative grow">
-                        <div
-                            class="absolute left-0 top-0 h-1 bg-yellow rounded-[4px] w-3/6 z-10"
-                        ></div>
-                        <div
-                            class="absolute left-0 top-0 w-full h-1 bg-[#404040] rounded-[4px]"
-                        ></div>
-                    </div>
-                    <p class="text-[12px] text-[#AEAEAE]">2.36</p>
+                    <p class="text-[12px] text-[#AEAEAE] hidden lg:block">
+                        2.36
+                    </p>
                 </div>
                 <!-- music control  -->
                 <div
-                    class="flex justify-between lg:items-center md:w-[300px] lg:w-[220px] lg:justify-self-center"
+                    class="hidden lg:justify-between lg:flex lg:items-center md:w-[300px] lg:w-[220px] lg:justify-self-center"
                 >
                     <button class="w-[14px]">
                         <img
@@ -1823,7 +1802,7 @@
                 </div>
                 <!-- others control  -->
                 <div
-                    class="flex justify-between md:w-[300px] md:justify-self-end lg:w-[220px] lg:justify-self-auto xl:justify-self-end"
+                    class="hidden justify-between md:w-[300px] md:justify-self-end lg:flex lg:w-[220px] lg:justify-self-auto xl:justify-self-end"
                 >
                     <button class="w-[16px]">
                         <img
