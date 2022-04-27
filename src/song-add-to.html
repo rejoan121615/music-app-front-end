@@ -435,15 +435,19 @@
                 <!-- content wrap  -->
                 <div class="box mt-[73px] sm:mt-[80px] lg:mt-0 lg:pt-[37px]">
                     <!-- quick navigation menu  -->
-                    <div class="box overflow-auto p-0 pb-5 lg:hidden">
+                    <div class="box overflow-auto lg:hidden">
                         <div class="flex flex-nowrap flex-row">
-                            <a class="sm-nav-item active" href="./index.html"
+                            <a class="sm-nav-item" href="./index.html"
                                 >home</a
                             >
-                            <a class="sm-nav-item" href="#">songs</a>
-                            <a class="sm-nav-item" href="#">album</a>
-                            <a class="sm-nav-item" href="#">artists</a>
-                            <a class="sm-nav-item" href="#">favourite's</a>
+                            <a class="sm-nav-item" href="./all-songs.html">songs</a>
+                            <a class="sm-nav-item" href="./albums.html">album</a>
+                            <a class="sm-nav-item" href="./artists.html"
+                                >artists</a
+                            >
+                            <a class="sm-nav-item" href="./favourite.html"
+                                >favourite's</a
+                            >
                         </div>
                     </div>
                     <!-- songs list for desktop screen  -->
@@ -933,27 +937,111 @@
             class="w-full fixed bottom-0 left-0 bg-dark-blue-600 py-[20px] lg:py-[16px]"
         >
             <div
-                class="container px-3 mx-auto grid grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-x-8 md:gap-x-14 lg:grid-cols-[250px_250px_220px_220px] lg:justify-between lg:gap-0 xl:grid-cols-[320px_320px_225px_225px]"
+                class="container px-3 mx-auto grid grid-cols-1 gap-y-5 md:gap-x-14 lg:grid-cols-[230px_250px_220px_220px] lg:justify-between lg:gap-0 xl:grid-cols-[350px_320px_225px_225px]"
             >
-                <!-- music details   -->
-                <div
-                    class="flex items-center gap-x-4 lg:w-[250px] xl:w-[320px]"
-                >
-                    <img
-                        src="./img/song-poster/i-miss-you.png"
-                        alt="I miss you song poster"
-                        class="poster"
-                    />
-                    <div class="">
-                        <p class="song-name">I Miss you</p>
-                        <p class="album-name">Dieu Tran - 30000 plays</p>
+                <!-- music details and control    -->
+                <div class="flex justify-between">
+                    <!-- music details container  -->
+                    <div
+                        class="flex items-center gap-x-[10px] lg:gap-x-[16px]"
+                    >
+                        <img
+                            src="./img/song-poster/i-miss-you.png"
+                            alt="I miss you song poster"
+                            class="w-8 h-8 lg:w-[56px] lg:h-[56px]"
+                        />
+                        <div class="">
+                            <p
+                                class="text-[10px] text-white font-semibold tracking-wider md:text-[13px] lg:text-[15px]"
+                            >
+                                Boyfriend (with Social House)
+                            </p>
+                            <p
+                                class="text-[10px] text-milk font-light tracking-wider mt-[4px]"
+                            >
+                                Ariana Grande
+                            </p>
+                        </div>
+                    </div>
+                    <!-- music controls  -->
+                    <div class="flex gap-x-6 items-start lg:hidden">
+                        <button>
+                            <svg
+                                width="14"
+                                height="12"
+                                viewBox="0 0 14 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M7 3.5H14" stroke="#B3B3B3"></path>
+                                <path
+                                    d="M0 7.5H14M0 11.5H14"
+                                    stroke="#B3B3B3"
+                                ></path>
+                                <path
+                                    d="M0.5 4V1L3.5 2.5L0.5 4Z"
+                                    fill="#B3B3B3"
+                                    stroke="#B3B3B3"
+                                ></path>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg
+                                width="17"
+                                height="14"
+                                viewBox="0 0 17 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9 12V2C9 1.44772 9.44772 1 10 1H15C15.5523 1 16 1.44772 16 2V12C16 12.5523 15.5523 13 15 13H10C9.44772 13 9 12.5523 9 12Z"
+                                    stroke="#B3B3B3"
+                                ></path>
+                                <path
+                                    d="M6.5 1H2C1.44772 1 1 1.44772 1 2V9C1 9.55228 1.44772 10 2 10H6.5"
+                                    stroke="#B3B3B3"
+                                ></path>
+                                <path d="M3.5 13H6.5" stroke="#B3B3B3"></path>
+                                <circle
+                                    cx="12.5"
+                                    cy="3.5"
+                                    r="1"
+                                    fill="#B3B3B3"
+                                ></circle>
+                                <circle
+                                    cx="12.5"
+                                    cy="8.5"
+                                    r="1.5"
+                                    stroke="#B3B3B3"
+                                ></circle>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg
+                                width="10"
+                                height="12"
+                                viewBox="0 0 10 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect width="3" height="12" fill="white" />
+                                <rect
+                                    x="7"
+                                    width="3"
+                                    height="12"
+                                    fill="white"
+                                />
+                            </svg>
+                        </button>
                     </div>
                 </div>
-                <!-- music player  -->
+                <!-- progress bar  -->
                 <div
                     class="flex items-center justify-between gap-x-2 lg:w-[250px] xl:w-[320px] xl:justify-self-center"
                 >
-                    <p class="text-[12px] text-[#AEAEAE]">0.59</p>
+                    <p class="text-[12px] text-[#AEAEAE] hidden lg:block">
+                        0.59
+                    </p>
                     <div class="h-1 relative grow">
                         <div
                             class="absolute left-0 top-0 h-1 bg-yellow rounded-[4px] w-3/6 z-10"
@@ -962,11 +1050,13 @@
                             class="absolute left-0 top-0 w-full h-1 bg-[#404040] rounded-[4px]"
                         ></div>
                     </div>
-                    <p class="text-[12px] text-[#AEAEAE]">2.36</p>
+                    <p class="text-[12px] text-[#AEAEAE] hidden lg:block">
+                        2.36
+                    </p>
                 </div>
                 <!-- music control  -->
                 <div
-                    class="flex justify-between lg:items-center md:w-[300px] lg:w-[220px] lg:justify-self-center"
+                    class="hidden lg:justify-between lg:flex lg:items-center md:w-[300px] lg:w-[220px] lg:justify-self-center"
                 >
                     <button class="w-[14px]">
                         <img
@@ -1006,7 +1096,7 @@
                 </div>
                 <!-- others control  -->
                 <div
-                    class="flex justify-between md:w-[300px] md:justify-self-end lg:w-[220px] lg:justify-self-auto xl:justify-self-end"
+                    class="hidden justify-between md:w-[300px] md:justify-self-end lg:flex lg:w-[220px] lg:justify-self-auto xl:justify-self-end"
                 >
                     <button class="w-[16px]">
                         <img
