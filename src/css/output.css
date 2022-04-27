@@ -1017,6 +1017,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }
 
+.mt-\[4px\] {
+  margin-top: 4px;
+}
+
 .block {
   display: block;
 }
@@ -1229,6 +1233,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: nowrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -1292,6 +1300,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
 }
 
 .self-start {
@@ -1504,6 +1517,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 20px;
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -1514,6 +1531,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .uppercase {
@@ -1550,6 +1575,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-\[0\.01em\] {
   letter-spacing: 0.01em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-white {
@@ -1777,6 +1806,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:justify-self-end {
     justify-self: end;
   }
+
+  .md\:text-\[13px\] {
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1937,6 +1970,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pt-\[37px\] {
     padding-top: 37px;
+  }
+
+  .lg\:text-\[15px\] {
+    font-size: 15px;
   }
 
   .lg\:text-milk {
