@@ -197,4 +197,18 @@
     .art-album-title {
         @apply text-[#B3B3B3] font-normal uppercase;
     }
+    /* content hover  */
+    .context-hover path {
+        fill: white;
+    }
+    .context-hover:hover path {
+        fill: black;
+    }
+    /* show context hover menu  */
+    .context-hover .play-list {
+        @apply hidden;
+    }
+    .context-hover:hover .play-list {
+        @apply block;
+    }
 }
