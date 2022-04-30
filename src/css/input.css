@@ -211,4 +211,11 @@
     .context-hover:hover .play-list {
         @apply block;
     }
+    /* album poster  */
+    .album-poster:hover img {
+        opacity: 0;
+    }
+    .album-poster:hover svg {
+        opacity: 1;
+    }
 }
