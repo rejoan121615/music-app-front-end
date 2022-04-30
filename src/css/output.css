@@ -1997,6 +1997,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 10rem;
   }
 
+  .lg\:w-28 {
+    width: 7rem;
+  }
+
   .lg\:max-w-\[160px\] {
     max-width: 160px;
   }
