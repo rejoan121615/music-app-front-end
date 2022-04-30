@@ -1223,8 +1223,6 @@
             // context options
             contextWrap.addEventListener("contextmenu", (e) => {
                 e.preventDefault();
-                console.log(window.innerWidth);
-                console.log(e.pageX);
                 contextOptions.style.display = "block";
                 if (window.innerWidth > e.pageX + 420) {
                     contextOptions.style.left = e.pageX + "px";
