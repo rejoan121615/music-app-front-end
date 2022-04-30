@@ -582,11 +582,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* song component  */
 
 .poster {
+  grid-column-start: 1;
+  grid-row-start: 1;
   height: 3rem;
   width: 3rem;
 }
 
 .poster-lg {
+  grid-column-start: 1;
+  grid-row-start: 1;
   height: 6rem;
   width: 6rem;
 }
@@ -1191,10 +1195,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 88px;
 }
 
-.w-28 {
-  width: 7rem;
-}
-
 .w-9\/12 {
   width: 75%;
 }
@@ -1355,17 +1355,17 @@ Ensure the default browser behavior of the `hidden` attribute.
        column-gap: 0.5rem;
 }
 
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
 .gap-y-\[37px\] {
   row-gap: 37px;
 }
 
 .gap-y-\[60px\] {
   row-gap: 60px;
-}
-
-.gap-x-5 {
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
 }
 
 .self-start {
@@ -1929,14 +1929,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 0px;
   }
 
-  .lg\:col-start-1 {
-    grid-column-start: 1;
-  }
-
-  .lg\:row-start-1 {
-    grid-row-start: 1;
-  }
-
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -1993,12 +1985,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 100%;
   }
 
-  .lg\:w-40 {
-    width: 10rem;
-  }
-
   .lg\:w-28 {
     width: 7rem;
+  }
+
+  .lg\:w-40 {
+    width: 10rem;
   }
 
   .lg\:max-w-\[160px\] {
@@ -2015,14 +2007,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:grid-cols-\[1fr_1fr_1fr\] {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .lg\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
-  .lg\:grid-rows-1 {
-    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:flex-col {
@@ -2099,10 +2083,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-milk {
     --tw-text-opacity: 1;
     color: rgb(218 218 218 / var(--tw-text-opacity));
-  }
-
-  .lg\:opacity-0 {
-    opacity: 0;
   }
 }
 

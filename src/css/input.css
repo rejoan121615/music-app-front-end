@@ -35,10 +35,10 @@
 
     /* song component  */
     .poster {
-        @apply w-12 h-12;
+        @apply w-12 h-12 row-start-1 col-start-1;
     }
     .poster-lg {
-        @apply w-24 h-24;
+        @apply w-24 h-24 row-start-1 col-start-1;
     }
     .song-name {
         @apply font-semibold text-base text-milk leading-[20px] tracking-[0.01em];
