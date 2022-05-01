@@ -36,7 +36,7 @@
             <!----------------- left side navigation menu  ----------------->
             <aside
                 id="left-navigation"
-                class="fixed bg-dark-blue w-full top-[72px] left-[-100%] pl-6 h-full border-r-1 pt-[40px] border-border md:top-[80px] lg:relative lg:top-0 lg:bg-transparent lg:left-0 xl:pt-[50px] lg:block lg:w-[220px] px-0"
+                class="fixed z-40 bg-dark-blue w-full top-[72px] left-[-100%] pl-6 h-full border-r-1 pt-[40px] border-border md:top-[80px] lg:relative lg:top-0 lg:bg-transparent lg:left-0 xl:pt-[50px] lg:block lg:w-[220px] px-0"
             >
                 <!-- back button  -->
                 <button class="flex justify-start items-center">
@@ -101,8 +101,11 @@
                             >
                         </li>
                         <!-- nav item  -->
-                        <li class="nav-item active">
-                            <a href="" class="flex items-center gap-x-4">
+                        <li class="nav-item">
+                            <a
+                                href="./current-queue.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -154,7 +157,7 @@
                             >
                         </li>
                         <!-- nav item  -->
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a
                                 href="./all-songs.html"
                                 class="flex items-center gap-x-4"
@@ -300,7 +303,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="" class="flex items-center gap-x-4">
+                            <a
+                                href="./artists.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -339,7 +345,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="" class="flex items-center gap-x-4">
+                            <a
+                                href="./favourite.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -436,12 +445,17 @@
                     </div>
                 </header>
                 <!-- content wrap  -->
-                <div class="box mt-[73px] sm:mt-[80px] lg:mt-0 lg:pt-[37px]">
+                <div
+                    id="context-wrap"
+                    class="box mt-[73px] sm:mt-[80px] lg:mt-0 lg:pt-[37px]"
+                >
                     <!-- quick navigation menu  -->
                     <div class="box overflow-auto lg:hidden">
                         <div class="flex flex-nowrap flex-row">
                             <a class="sm-nav-item" href="./index.html">home</a>
-                            <a class="sm-nav-item" href="./all-songs.html"
+                            <a
+                                class="sm-nav-item active"
+                                href="./all-songs.html"
                                 >songs</a
                             >
                             <a class="sm-nav-item" href="./albums.html"
@@ -1003,6 +1017,88 @@
                             </a>
                         </div>
                     </aside>
+                    <!-- context menu  -->
+                    <div
+                        id="context-menu"
+                        class="hidden absolute bg-[#051120] left-10 top-6 border-2 border-border rounded-md w-[210px]"
+                    >
+                        <ul class="">
+                            <li
+                                class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                            >
+                                play
+                            </li>
+                            <li
+                                class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                            >
+                                Favorite
+                            </li>
+                            <li
+                                class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                            >
+                                Go to Album
+                            </li>
+                            <li
+                                class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                            >
+                                Go to Artist
+                            </li>
+                            <li
+                                class="relative text-[14px] leading-[17px] py-3 pr-6 flex items-center justify-between pl-4 cursor-pointer transition-all text-white hover:bg-[#e3aa27] hover:text-black context-hover"
+                            >
+                                Add to
+                                <svg
+                                    class="svg-inline--fa fa-caret-right block w-[9px] h-[17px]"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    data-prefix="fas"
+                                    data-icon="caret-right"
+                                    role="img"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 256 512"
+                                >
+                                    <path
+                                        d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"
+                                    ></path>
+                                </svg>
+                                <!-- album list  -->
+                                <ul
+                                    class="play-list absolute -right-[206px] bottom-0 w-[208px] bg-[#051120] border-2 border-border"
+                                >
+                                    <li
+                                        class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                                    >
+                                        playlist 1
+                                    </li>
+                                    <li
+                                        class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                                    >
+                                        playlist 2
+                                    </li>
+                                    <li
+                                        class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                                    >
+                                        playlist 3
+                                    </li>
+                                    <li
+                                        class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                                    >
+                                        playlist 5
+                                    </li>
+                                    <li
+                                        class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                                    >
+                                        playlist 6
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                            >
+                                Copy Sharable URL
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -1203,5 +1299,6 @@
         </div>
         <!-- js file  -->
         <script src="./js/script.js"></script>
+        
     </body>
 </html>
