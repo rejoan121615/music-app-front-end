@@ -102,7 +102,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="./current-queue.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./current-queue.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -236,7 +239,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="./albums.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./albums.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -297,7 +303,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item">
-                            <a href="./artists.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./artists.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -336,7 +345,10 @@
                         </li>
                         <!-- nav item  -->
                         <li class="nav-item active">
-                            <a href="./favourite.html" class="flex items-center gap-x-4">
+                            <a
+                                href="./favourite.html"
+                                class="flex items-center gap-x-4"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -433,19 +445,26 @@
                     </div>
                 </header>
                 <!-- content wrap  -->
-                <div class="box mt-[73px] sm:mt-[80px] lg:mt-0 lg:pt-[37px]">
+                <div
+                    id="context-wrap"
+                    class="box mt-[73px] sm:mt-[80px] lg:mt-0 lg:pt-[37px]"
+                >
                     <!-- quick navigation menu  -->
                     <div class="box overflow-auto lg:hidden">
                         <div class="flex flex-nowrap flex-row">
-                            <a class="sm-nav-item" href="./index.html"
-                                >home</a
+                            <a class="sm-nav-item" href="./index.html">home</a>
+                            <a class="sm-nav-item" href="./all-songs.html"
+                                >songs</a
                             >
-                            <a class="sm-nav-item" href="./all-songs.html">songs</a>
-                            <a class="sm-nav-item" href="./albums.html">album</a>
+                            <a class="sm-nav-item" href="./albums.html"
+                                >album</a
+                            >
                             <a class="sm-nav-item" href="./artists.html"
                                 >artists</a
                             >
-                            <a class="sm-nav-item active" href="./favourite.html"
+                            <a
+                                class="sm-nav-item active"
+                                href="./favourite.html"
                                 >favourite's</a
                             >
                         </div>
@@ -592,15 +611,31 @@
                         <!-- song list  -->
                         <div class="flex flex-col gap-y-4">
                             <!-- songs  -->
-                            <a href="./song.html"
+                            <a
+                                href="./song.html"
                                 class="song-hover flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
                             >
                                 <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
+                                    <div
+                                        class="album-poster grid grid-rows-1 grid-cols-1 justify-items-center items-center"
+                                    >
+                                        <img
+                                            src="./img/song-poster/i-miss-you.png"
+                                            alt="I miss you song poster"
+                                            class="poster"
+                                        />
+                                        <svg
+                                            class="opacity-0 w-6 block row-start-1 col-start-1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"
+                                        >
+                                            <path
+                                                fill="white"
+                                                d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"
+                                            />
+                                        </svg>
+                                    </div>
+
                                     <div class="">
                                         <p class="song-name">I Miss you</p>
                                         <p class="album-name">
@@ -644,15 +679,30 @@
                                 </button>
                             </a>
                             <!-- songs  -->
-                            <a href="./song.html"
+                            <a
+                                href="./song.html"
                                 class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
                             >
                                 <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/who-are-you.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
+                                    <div
+                                        class="album-poster grid grid-rows-1 grid-cols-1 justify-items-center items-center"
+                                    >
+                                        <img
+                                            src="./img/song-poster/who-are-you.png"
+                                            alt="I miss you song poster"
+                                            class="poster"
+                                        />
+                                        <svg
+                                            class="opacity-0 w-6 block row-start-1 col-start-1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"
+                                        >
+                                            <path
+                                                fill="white"
+                                                d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"
+                                            />
+                                        </svg>
+                                    </div>
                                     <div class="">
                                         <p class="song-name">Who are you</p>
                                         <p class="album-name">
@@ -697,15 +747,30 @@
                                 </button>
                             </a>
                             <!-- songs  -->
-                            <a href="./song.html"
+                            <a
+                                href="./song.html"
                                 class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
                             >
                                 <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/where-are-we-going.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
+                                    <div
+                                        class="album-poster grid grid-rows-1 grid-cols-1 justify-items-center items-center"
+                                    >
+                                        <img
+                                            src="./img/song-poster/where-are-we-going.png"
+                                            alt="I miss you song poster"
+                                            class="poster"
+                                        />
+                                        <svg
+                                            class="opacity-0 w-6 block row-start-1 col-start-1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"
+                                        >
+                                            <path
+                                                fill="white"
+                                                d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"
+                                            />
+                                        </svg>
+                                    </div>
                                     <div class="">
                                         <p class="song-name">
                                             Where are we going?
@@ -751,15 +816,30 @@
                                 </button>
                             </a>
                             <!-- songs  -->
-                            <a href="./song.html"
+                            <a
+                                href="./song.html"
                                 class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
                             >
                                 <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you-2.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
+                                    <div
+                                        class="album-poster grid grid-rows-1 grid-cols-1 justify-items-center items-center"
+                                    >
+                                        <img
+                                            src="./img/song-poster/i-miss-you-2.png"
+                                            alt="I miss you song poster"
+                                            class="poster"
+                                        />
+                                        <svg
+                                            class="opacity-0 w-6 block row-start-1 col-start-1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"
+                                        >
+                                            <path
+                                                fill="white"
+                                                d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"
+                                            />
+                                        </svg>
+                                    </div>
                                     <div class="">
                                         <p class="song-name">I Miss you</p>
                                         <p class="album-name">
@@ -803,15 +883,30 @@
                                 </button>
                             </a>
                             <!-- songs  -->
-                            <a href="./song.html"
+                            <a
+                                href="./song.html"
                                 class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
                             >
                                 <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you-3.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
+                                    <div
+                                        class="album-poster grid grid-rows-1 grid-cols-1 justify-items-center items-center"
+                                    >
+                                        <img
+                                            src="./img/song-poster/i-miss-you-3.png"
+                                            alt="I miss you song poster"
+                                            class="poster"
+                                        />
+                                        <svg
+                                            class="opacity-0 w-6 block row-start-1 col-start-1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"
+                                        >
+                                            <path
+                                                fill="white"
+                                                d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"
+                                            />
+                                        </svg>
+                                    </div>
                                     <div class="">
                                         <p class="song-name">I Miss you</p>
                                         <p class="album-name">
@@ -855,15 +950,30 @@
                                 </button>
                             </a>
                             <!-- songs  -->
-                            <a href="./song.html"
+                            <a
+                                href="./song.html"
                                 class="flex justify-between items-center cursor-pointer border-1 border-transparent hover:p-[5px_6px] hover:border-1 hover:border-milk-dark hover:rounded-[8px] transition-all duration-500"
                             >
                                 <div class="flex items-center gap-x-4">
-                                    <img
-                                        src="./img/song-poster/i-miss-you-4.png"
-                                        alt="I miss you song poster"
-                                        class="poster"
-                                    />
+                                    <div
+                                        class="album-poster grid grid-rows-1 grid-cols-1 justify-items-center items-center"
+                                    >
+                                        <img
+                                            src="./img/song-poster/i-miss-you-4.png"
+                                            alt="I miss you song poster"
+                                            class="poster"
+                                        />
+                                        <svg
+                                            class="opacity-0 w-6 block row-start-1 col-start-1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"
+                                        >
+                                            <path
+                                                fill="white"
+                                                d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"
+                                            />
+                                        </svg>
+                                    </div>
                                     <div class="">
                                         <p class="song-name">I Miss you</p>
                                         <p class="album-name">
@@ -908,6 +1018,88 @@
                             </a>
                         </div>
                     </aside>
+                    <!-- context menu  -->
+                    <div
+                        id="context-menu"
+                        class="hidden absolute bg-[#051120] left-10 top-6 border-2 border-border rounded-md w-[210px]"
+                    >
+                        <ul class="">
+                            <li
+                                class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                            >
+                                play
+                            </li>
+                            <li
+                                class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                            >
+                                Favorite
+                            </li>
+                            <li
+                                class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                            >
+                                Go to Album
+                            </li>
+                            <li
+                                class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                            >
+                                Go to Artist
+                            </li>
+                            <li
+                                class="relative text-[14px] leading-[17px] py-3 pr-6 flex items-center justify-between pl-4 cursor-pointer transition-all text-white hover:bg-[#e3aa27] hover:text-black context-hover"
+                            >
+                                Add to
+                                <svg
+                                    class="svg-inline--fa fa-caret-right block w-[9px] h-[17px]"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    data-prefix="fas"
+                                    data-icon="caret-right"
+                                    role="img"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 256 512"
+                                >
+                                    <path
+                                        d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"
+                                    ></path>
+                                </svg>
+                                <!-- album list  -->
+                                <ul
+                                    class="play-list absolute -right-[206px] bottom-0 w-[208px] bg-[#051120] border-2 border-border"
+                                >
+                                    <li
+                                        class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                                    >
+                                        playlist 1
+                                    </li>
+                                    <li
+                                        class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                                    >
+                                        playlist 2
+                                    </li>
+                                    <li
+                                        class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                                    >
+                                        playlist 3
+                                    </li>
+                                    <li
+                                        class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                                    >
+                                        playlist 5
+                                    </li>
+                                    <li
+                                        class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                                    >
+                                        playlist 6
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="title-14px capitalize py-3 pl-4 cursor-pointer transition-all hover:bg-[#e3aa27] hover:text-black"
+                            >
+                                Copy Sharable URL
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -921,9 +1113,7 @@
                 <!-- music details and control    -->
                 <div class="flex justify-between">
                     <!-- music details container  -->
-                    <div
-                        class="flex items-center gap-x-[10px] lg:gap-x-[16px]"
-                    >
+                    <div class="flex items-center gap-x-[10px] lg:gap-x-[16px]">
                         <img
                             src="./img/song-poster/i-miss-you.png"
                             alt="I miss you song poster"
