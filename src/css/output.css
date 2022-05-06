@@ -1589,10 +1589,6 @@ th, td {
   padding-top: 48px;
 }
 
-.text-left {
-  text-align: left;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1962,6 +1958,10 @@ th, td {
 
   .lg\:left-0 {
     left: 0px;
+  }
+
+  .lg\:z-50 {
+    z-index: 50;
   }
 
   .lg\:mt-0 {
