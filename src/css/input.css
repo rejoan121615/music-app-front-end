@@ -215,7 +215,7 @@
     .album-poster {
         position: relative;
     }
-    .album-poster:hover::after{
+    .album-poster:hover::after {
         content: "";
         position: absolute;
         left: 0;
@@ -230,5 +230,14 @@
     }
     .album-poster:hover svg {
         /* opacity: 1; */
+    }
+
+    /* common style  */
+    th {
+        @apply font-light text-left;
+    }
+    th,
+    td {
+        @apply text-white;
     }
 }

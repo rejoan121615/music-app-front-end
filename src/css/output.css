@@ -886,7 +886,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.album-poster:hover::after{
+.album-poster:hover::after {
   content: "";
   position: absolute;
   left: 0;
@@ -903,6 +903,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .album-poster:hover svg {
   /* opacity: 1; */
+}
+
+/* common style  */
+
+th {
+  text-align: left;
+  font-weight: 300;
+}
+
+th, td {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .fixed {
@@ -1088,6 +1100,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -1571,6 +1587,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-\[48px\] {
   padding-top: 48px;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
