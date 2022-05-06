@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1917,8 +1917,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1024px) {
   .lg\:title-16px {
     font-size: 16px;
+  }
+
+  .lg\:title-16px {
     font-weight: 600;
+  }
+
+  .lg\:title-16px {
     line-height: 20px;
+  }
+
+  .lg\:title-16px {
     --tw-text-opacity: 1;
     color: rgb(227 170 39 / var(--tw-text-opacity));
   }
